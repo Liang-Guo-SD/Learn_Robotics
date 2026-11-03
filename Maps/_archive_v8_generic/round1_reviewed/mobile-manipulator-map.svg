@@ -1,0 +1,392 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" version="1.1">
+<title>Mobile Manipulator Learning Map</title>
+<desc>A learning map from basic Linux and Python to a two-wheeled mobile robot arm that presses a button and picks up an object: the robot and its physics, a nine-stop route with a pass gate at every stop, and how the parts fit.</desc>
+<style>text{font-family:"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif} .mth{font-family:"STIX Two Text","Times New Roman",serif}</style>
+<rect x="291.062" y="15.05" width="2.6" height="2.6" fill="#0B5F9E" stroke="#0B5F9E" stroke-width="0"/>
+<rect x="308.809" y="15.05" width="2.6" height="2.6" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<rect x="344.383" y="15.05" width="2.6" height="2.6" fill="#8A2F6B" stroke="#8A2F6B" stroke-width="0"/>
+<rect x="368.134" y="15.05" width="2.6" height="2.6" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<rect x="385.726" y="15.05" width="2.6" height="2.6" fill="#B5420A" stroke="#B5420A" stroke-width="0"/>
+<text x="12" y="25.3" font-size="13" fill="#1B2430" font-weight="600" data-block="title" class="txt">Mobile Manipulator Learning Map</text>
+<text x="12" y="33.6" font-size="2.75" fill="#566070" font-weight="400" data-block="goal" class="txt">From basic Linux and Python to a two-wheeled robot arm that presses a button and picks up an object.</text>
+<text x="408" y="21.6" font-size="2.45" fill="#1B2430" font-weight="400" text-anchor="end" data-block="howto" data-line="0" class="txt">Follow the numbers. Do not move on until you meet Pass. Build in simulation first, then on the real robot.</text>
+<text x="295.162" y="17.2" font-size="2.45" fill="#566070" font-weight="400" class="txt">Prepare</text>
+<text x="312.909" y="17.2" font-size="2.45" fill="#566070" font-weight="400" class="txt">Build the classical robot</text>
+<text x="348.483" y="17.2" font-size="2.45" fill="#566070" font-weight="400" class="txt">Add learning</text>
+<text x="372.234" y="17.2" font-size="2.45" fill="#566070" font-weight="400" class="txt">Mission</text>
+<text x="389.826" y="17.2" font-size="2.45" fill="#566070" font-weight="400" class="txt">Safety and limits</text>
+<line x1="22" y1="101" x2="142" y2="101" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="142" y1="101" x2="142" y2="60" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="142" y1="60" x2="139.4" y2="60" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line class="chassis-top" x1="44" y1="80" x2="84" y2="80" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="44" y1="80" x2="44" y2="90.4" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="84" y1="80" x2="84" y2="90.4" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="44" y1="90.4" x2="50.148" y2="90.4" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="57.852" y1="90.4" x2="84" y2="90.4" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<rect class="battery" x="45.4" y="83.4" width="6.6" height="4.2" fill="none" stroke="#1B2430" stroke-width="0.25"/>
+<circle class="wheel" cx="54" cy="95" r="6" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<line x1="50.28" y1="95" x2="57.72" y2="95" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<circle class="axle" cx="54" cy="95" r="0.7" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<rect x="80.2" y="90.4" width="3.6" height="1.3" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line x1="81.1" y1="91.7" x2="82" y2="97.8" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="82.9" y1="91.7" x2="82" y2="97.8" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<circle class="caster" cx="82" cy="99.1" r="1.9" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line class="mast" x1="50" y1="80" x2="50" y2="68.8" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="48.662,69.211 53.338,66.511 54.538,68.589 49.862,71.289" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line x1="53.938" y1="67.55" x2="55.151" y2="66.85" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="73.5,80 82.5,80 81.4,77.4 74.6,77.4" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line x1="81.383" y1="77.832" x2="108.388" y2="57.025" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="77.819" y1="73.005" x2="105.656" y2="53.324" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="108.199" y1="57.007" x2="126.8" y2="75.984" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="111.567" y1="53.875" x2="129.143" y2="73.805" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<circle cx="78" cy="76.6" r="3.6" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle cx="78" cy="76.6" r="1.368" fill="none" stroke="#1B2430" stroke-width="0.25"/>
+<circle cx="108.571" cy="54.03" r="3" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle cx="129" cy="76" r="2.2" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line x1="130.54" y1="76" x2="131.1" y2="76" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<circle cx="132.2" cy="76" r="1.1" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<rect x="133.3" y="74.7" width="1.8" height="2.6" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line x1="135.1" y1="75" x2="135.8" y2="75" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="135.1" y1="77" x2="135.8" y2="77" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="139.4" y="74.7" width="2.6" height="2.6" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<rect x="116" y="94.5" width="6" height="6.5" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle class="com-dot" cx="64" cy="77.4" r="1.15" fill="#B5420A" stroke="#B5420A" stroke-width="0"/>
+<line class="com-drop" x1="64" y1="78.55" x2="64" y2="101" stroke="#B5420A" stroke-width="0.25" stroke-linecap="butt"/>
+<line class="support" x1="54" y1="103.4" x2="82" y2="103.4" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="54" y1="103.4" x2="54" y2="101.9" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="82" y1="103.4" x2="82" y2="101.9" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="24" y1="101" x2="26.05" y2="101" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="27.2,101 26.05,101.475 26.05,100.525" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="24" y1="101" x2="24" y2="98.95" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="24,97.8 24.475,98.95 23.525,98.95" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="45.8" y1="78.6" x2="47.55" y2="78.6" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="48.7,78.6 47.55,79.075 47.55,78.125" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="45.8" y1="78.6" x2="45.8" y2="76.85" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="45.8,75.7 46.275,76.85 45.325,76.85" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="53.938" y1="67.55" x2="55.54" y2="66.625" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="56.536,66.05 55.778,67.036 55.303,66.214" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="53.938" y1="67.55" x2="53.013" y2="65.948" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="52.438,64.952 53.425,65.71 52.602,66.185" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="136.5" y1="76" x2="138.35" y2="76" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="139.5,76 138.35,76.475 138.35,75.525" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="136.5" y1="76" x2="136.5" y2="74.15" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="136.5,73 136.975,74.15 136.025,74.15" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="122" y1="94.5" x2="124.45" y2="94.5" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="125.6,94.5 124.45,94.975 124.45,94.025" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="122" y1="94.5" x2="122" y2="92.05" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="122,90.9 122.475,92.05 121.525,92.05" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<text x="12" y="45" font-size="4.4" fill="#1B2430" font-weight="600" data-block="a-head" class="txt">One robot, one idea</text>
+<text x="54" y="107" font-size="2.45" fill="#B5420A" font-weight="400" data-block="support" class="txt">support</text>
+<text x="62.1" y="78.3" font-size="2.45" fill="#B5420A" font-weight="400" text-anchor="end" data-block="com" class="txt">COM</text>
+<text x="17.8" y="99.4" font-size="2.45" fill="#1B2430" font-weight="400" font-style="italic" data-block="fW" class="txt">W</text>
+<text x="47.4" y="76.8" font-size="2.45" fill="#1B2430" font-weight="400" font-style="italic" data-block="fB" class="txt">B</text>
+<text x="46.4" y="65.4" font-size="2.45" fill="#1B2430" font-weight="400" font-style="italic" data-block="fC" class="txt">C</text>
+<text x="137.8" y="71.8" font-size="2.45" fill="#1B2430" font-weight="400" font-style="italic" data-block="fH" class="txt">H</text>
+<text x="123.2" y="89.9" font-size="2.45" fill="#1B2430" font-weight="400" font-style="italic" data-block="fO" class="txt">O</text>
+<rect x="286.5" y="57.3" width="20" height="4.4" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<rect x="281.7" y="56.2" width="1.6" height="6.6" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<rect x="309.7" y="56.2" width="1.6" height="6.6" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line x1="282.5" y1="59.5" x2="310.5" y2="59.5" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="296.5" y1="57.3" x2="296.5" y2="55" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="296.5,53.5 297.1,55 295.9,55" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="302.5" y1="63.5" x2="294.6" y2="63.5" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="292.9,63.5 294.6,62.85 294.6,64.15" fill="#B5420A" stroke="#1B2430" stroke-width="0"/>
+<line x1="296.7" y1="62.7" x2="298.9" y2="64.3" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="361.3,63.9 385.7,63.9 373.5,54.8" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle cx="374.7" cy="60.7" r="1.25" fill="#B5420A" stroke="#B5420A" stroke-width="0"/>
+<line x1="374.7" y1="59.45" x2="374.7" y2="58.9" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="374.7,57.5 375.25,58.9 374.15,58.9" fill="#B5420A" stroke="#1B2430" stroke-width="0"/>
+<line x1="326" y1="86.3" x2="326" y2="96.3" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<rect x="322.4" y="90" width="3.6" height="3" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="309" y1="91.5" x2="319.2" y2="91.5" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="320.7,91.5 319.2,92.1 319.2,90.9" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<circle cx="322.4" cy="91.5" r="1.25" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<path d="M 305.326 87.142 A 1.8 4.7 0 1 0 306.674 87.142" fill="none" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter"/>
+<line x1="306.681" y1="87.149" x2="306.262" y2="86.707" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="305.436,85.836 306.624,86.363 305.899,87.051" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<rect x="368.7" y="88.5" width="9.6" height="5.2" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line x1="368" y1="87.5" x2="368" y2="94.7" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="379" y1="87.5" x2="379" y2="94.7" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="362.7" y1="90.3" x2="365.8" y2="90.3" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="367.2,90.3 365.8,90.85 365.8,89.75" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="384.3" y1="90.3" x2="381.2" y2="90.3" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="379.8,90.3 381.2,89.75 381.2,90.85" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="369.8" y1="92.8" x2="369.8" y2="88.3" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="369.8,86.9 370.35,88.3 369.25,88.3" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="377.2" y1="92.8" x2="377.2" y2="88.3" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="377.2,86.9 377.75,88.3 376.65,88.3" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="373.5" y1="93.9" x2="373.5" y2="94.8" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="373.5,96.3 372.9,94.8 374.1,94.8" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<text x="158" y="52.2" font-size="3.6" fill="#1B2430" class="txt mth" data-block="eq1"><tspan font-size="2.45" font-style="normal" dy="-1.224">W</tspan><tspan font-size="3.6" font-style="italic" dy="1.224">T</tspan><tspan font-size="2.45" font-style="normal" dy="1.08">H</tspan><tspan font-size="3.6" font-style="normal" dy="-1.08"> = </tspan><tspan font-size="2.45" font-style="normal" dy="-1.224">W</tspan><tspan font-size="3.6" font-style="italic" dy="1.224">T</tspan><tspan font-size="2.45" font-style="normal" dy="1.08">B</tspan><tspan font-size="3.6" font-style="normal" dy="-1.08">(</tspan><tspan font-size="3.6" font-style="italic">x</tspan><tspan font-size="3.6" font-style="normal">, </tspan><tspan font-size="3.6" font-style="italic">y</tspan><tspan font-size="3.6" font-style="normal">, </tspan><tspan font-size="3.6" font-style="italic">θ</tspan><tspan font-size="3.6" font-style="normal">) · </tspan><tspan font-size="2.45" font-style="normal" dy="-1.224">B</tspan><tspan font-size="3.6" font-style="italic" dy="1.224">T</tspan><tspan font-size="2.45" font-style="normal" dy="1.08">H</tspan><tspan font-size="3.6" font-style="normal" dy="-1.08">(</tspan><tspan font-size="3.6" font-style="italic">q</tspan><tspan font-size="3.6" font-style="normal">)</tspan></text>
+<text x="158" y="57" font-size="2.45" fill="#566070" font-weight="400" data-block="eq1c" data-line="0" class="txt">Hand in world = base in world × hand relative to base (q = joint angles).</text>
+<text x="158" y="63.2" font-size="3.6" fill="#1B2430" class="txt mth" data-block="eq2"><tspan font-size="2.45" font-style="normal" dy="-1.224">B</tspan><tspan font-size="3.6" font-style="italic" dy="1.224">T</tspan><tspan font-size="2.45" font-style="normal" dy="1.08">O</tspan><tspan font-size="3.6" font-style="normal" dy="-1.08"> = </tspan><tspan font-size="2.45" font-style="normal" dy="-1.224">B</tspan><tspan font-size="3.6" font-style="italic" dy="1.224">T</tspan><tspan font-size="2.45" font-style="normal" dy="1.08">C</tspan><tspan font-size="3.6" font-style="normal" dy="-1.08"> · </tspan><tspan font-size="2.45" font-style="normal" dy="-1.224">C</tspan><tspan font-size="3.6" font-style="italic" dy="1.224">T</tspan><tspan font-size="2.45" font-style="normal" dy="1.08">O</tspan></text>
+<text x="158" y="68" font-size="2.45" fill="#566070" font-weight="400" data-block="eq2c" data-line="0" class="txt">Target from base = camera from base (calibration) × target from camera (vision).</text>
+<text x="158" y="75.4" font-size="2.75" fill="#1B2430" font-weight="600" data-block="insight" data-line="0" class="txt">Wheel odometry drifts. So park, look again, and act from the base frame.</text>
+<text x="158" y="81" font-size="2.45" fill="#566070" font-weight="400" data-block="fkey" data-line="0" class="txt">T = pose of one frame in another. W world · B base · C camera · H hand · O target.</text>
+<text x="158" y="85.4" font-size="2.45" fill="#566070" font-weight="400" data-block="refnote" data-line="0" class="txt">Reference robot: two driven wheels and a</text>
+<text x="158" y="88.85" font-size="2.45" fill="#566070" font-weight="400" data-block="refnote" data-line="1" class="txt">passive caster, so it stands still when powered off.</text>
+<text x="262" y="52.2" font-size="3.6" fill="#1B2430" font-weight="600" data-block="ph0-t" class="txt">No sideways motion</text>
+<text x="297.9" y="55.8" font-size="2.75" fill="#1B2430" font-weight="400" font-style="italic" data-block="ph0-v" class="txt">v</text>
+<text x="262" y="67.2" font-size="2.75" fill="#1B2430" class="txt mth" data-block="ph0-f"><tspan font-size="2.75" font-style="italic">v</tspan><tspan font-size="2.75" font-style="normal"> = </tspan><tspan font-size="2.75" font-style="italic">r</tspan><tspan font-size="2.75" font-style="normal">(</tspan><tspan font-size="2.75" font-style="italic">ω</tspan><tspan font-size="2.45" font-style="normal" dy="0.825">R</tspan><tspan font-size="2.75" font-style="normal" dy="-0.825"> + </tspan><tspan font-size="2.75" font-style="italic">ω</tspan><tspan font-size="2.45" font-style="normal" dy="0.825">L</tspan><tspan font-size="2.75" font-style="normal" dy="-0.825">)/2</tspan></text>
+<text x="287.757" y="67.2" font-size="2.75" fill="#1B2430" class="txt mth" data-block="ph0-f2"><tspan font-size="2.75" font-style="italic">ω</tspan><tspan font-size="2.75" font-style="normal"> = </tspan><tspan font-size="2.75" font-style="italic">r</tspan><tspan font-size="2.75" font-style="normal">(</tspan><tspan font-size="2.75" font-style="italic">ω</tspan><tspan font-size="2.45" font-style="normal" dy="0.825">R</tspan><tspan font-size="2.75" font-style="normal" dy="-0.825"> − </tspan><tspan font-size="2.75" font-style="italic">ω</tspan><tspan font-size="2.45" font-style="normal" dy="0.825">L</tspan><tspan font-size="2.75" font-style="normal" dy="-0.825">)/</tspan><tspan font-size="2.75" font-style="italic">b</tspan></text>
+<text x="262" y="71.5" font-size="2.45" fill="#566070" font-weight="400" data-block="ph0-s" data-line="0" class="txt">Wheels roll, they do not slide. Moving 5 cm left takes</text>
+<text x="262" y="74.95" font-size="2.45" fill="#566070" font-weight="400" data-block="ph0-s" data-line="1" class="txt">a manoeuvre, so choose your parking pose carefully.</text>
+<text x="262" y="78.5" font-size="2.45" fill="#566070" class="txt mth" data-block="ph0-k"><tspan font-size="2.45" font-style="italic">r</tspan><tspan font-size="2.45" font-style="normal"> wheel radius · </tspan><tspan font-size="2.45" font-style="italic">b</tspan><tspan font-size="2.45" font-style="normal"> track width</tspan></text>
+<text x="339" y="52.2" font-size="3.6" fill="#1B2430" font-weight="600" data-block="ph1-t" class="txt">Keep the COM inside</text>
+<text x="372.8" y="61.6" font-size="2.45" fill="#B5420A" font-weight="400" text-anchor="end" data-block="ph1-com" class="txt">COM</text>
+<text x="339" y="67.2" font-size="2.75" fill="#1B2430" class="txt mth" data-block="ph1-f"><tspan font-size="2.75" font-style="normal">Stable: COM ground point inside the support polygon.</tspan></text>
+<text x="339" y="71.5" font-size="2.45" fill="#566070" font-weight="400" data-block="ph1-s" data-line="0" class="txt">Reaching and braking shrink the margin. Keep</text>
+<text x="339" y="74.95" font-size="2.45" fill="#566070" font-weight="400" data-block="ph1-s" data-line="1" class="txt">batteries low and stow the arm before driving.</text>
+<text x="262" y="84.6" font-size="3.6" fill="#1B2430" font-weight="600" data-block="ph2-t" class="txt">Count the constraints</text>
+<text x="303.4" y="92.4" font-size="2.45" fill="#1B2430" font-weight="400" text-anchor="end" data-block="ph2-free" class="txt">free</text>
+<text x="262" y="99.6" font-size="2.75" fill="#1B2430" class="txt mth" data-block="ph2-f"><tspan font-size="2.75" font-style="normal">press = 3 position + 2 axis = 5</tspan></text>
+<text x="262" y="103.9" font-size="2.45" fill="#566070" font-weight="400" data-block="ph2-s" data-line="0" class="txt">A 5-joint arm has no spare joint for this. Turning the</text>
+<text x="262" y="107.35" font-size="2.45" fill="#566070" font-weight="400" data-block="ph2-s" data-line="1" class="txt">base adds one. Counting is necessary, not sufficient.</text>
+<text x="339" y="84.6" font-size="3.6" fill="#1B2430" font-weight="600" data-block="ph3-t" class="txt">Friction holds it</text>
+<text x="362.7" y="89" font-size="2.45" fill="#1B2430" class="txt mth" data-block="ph3-fn"><tspan font-size="2.45" font-style="italic">F</tspan><tspan font-size="2.45" font-style="normal" dy="0.735">n</tspan></text>
+<text x="374.9" y="96" font-size="2.45" fill="#1B2430" class="txt mth" data-block="ph3-mg"><tspan font-size="2.45" font-style="italic">m</tspan><tspan font-size="2.45" font-style="italic">g</tspan></text>
+<text x="339" y="99.6" font-size="2.75" fill="#1B2430" class="txt mth" data-block="ph3-f"><tspan font-size="2.75" font-style="normal">2 </tspan><tspan font-size="2.75" font-style="italic">μ</tspan><tspan font-size="2.75" font-style="normal"> </tspan><tspan font-size="2.75" font-style="italic">F</tspan><tspan font-size="2.45" font-style="normal" dy="0.825">n</tspan><tspan font-size="2.75" font-style="normal" dy="-0.825"> ≥ </tspan><tspan font-size="2.75" font-style="italic">m</tspan><tspan font-size="2.75" font-style="normal"> </tspan><tspan font-size="2.75" font-style="italic">g</tspan></text>
+<text x="339" y="103.9" font-size="2.45" fill="#566070" font-weight="400" data-block="ph3-s" data-line="0" class="txt">Squeeze force and surface friction must carry</text>
+<text x="339" y="107.35" font-size="2.45" fill="#566070" font-weight="400" data-block="ph3-s" data-line="1" class="txt">the weight. Soft, grippy fingertips help most.</text>
+<text x="339" y="110.9" font-size="2.45" fill="#566070" class="txt mth" data-block="ph3-k"><tspan font-size="2.45" font-style="italic">μ</tspan><tspan font-size="2.45" font-style="normal"> friction coefficient · </tspan><tspan font-size="2.45" font-style="italic">F</tspan><tspan font-size="2.45" font-style="normal" dy="0.735">n</tspan><tspan font-size="2.45" font-style="normal" dy="-0.735"> grip force</tspan></text>
+<line x1="132.833" y1="126.4" x2="386.833" y2="126.4" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="132.833" y1="126.4" x2="132.833" y2="128.2" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="386.833" y1="126.4" x2="386.833" y2="128.2" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="12" y1="134.4" x2="43.917" y2="134.4" stroke="#0B5F9E" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="52.417" y1="134.4" x2="86.25" y2="134.4" stroke="#0B5F9E" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="94.75" y1="134.4" x2="111.667" y2="134.4" stroke="#0B5F9E" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="111.667" y1="134.4" x2="128.583" y2="134.4" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="137.083" y1="134.4" x2="170.917" y2="134.4" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="179.417" y1="134.4" x2="213.25" y2="134.4" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="221.75" y1="134.4" x2="255.583" y2="134.4" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="264.083" y1="134.4" x2="297.917" y2="134.4" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="306.417" y1="134.4" x2="323.333" y2="134.4" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="323.333" y1="134.4" x2="340.25" y2="134.4" stroke="#8A2F6B" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="348.75" y1="134.4" x2="365.667" y2="134.4" stroke="#8A2F6B" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="365.667" y1="134.4" x2="382.583" y2="134.4" stroke="#1B2430" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="391.083" y1="134.4" x2="408" y2="134.4" stroke="#1B2430" stroke-width="1.6" stroke-linecap="butt"/>
+<line x1="408" y1="130.2" x2="408" y2="138.6" stroke="#1B2430" stroke-width="1.6" stroke-linecap="butt"/>
+<circle cx="48.167" cy="134.4" r="4.25" fill="#0B5F9E" stroke="#0B5F9E" stroke-width="0"/>
+<line x1="48.167" y1="138.65" x2="48.167" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="90.5" cy="134.4" r="4.25" fill="#0B5F9E" stroke="#0B5F9E" stroke-width="0"/>
+<line x1="90.5" y1="138.65" x2="90.5" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="132.833" cy="134.4" r="4.25" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<line x1="132.833" y1="138.65" x2="132.833" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="175.167" cy="134.4" r="4.25" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<line x1="175.167" y1="138.65" x2="175.167" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="217.5" cy="134.4" r="4.25" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<line x1="217.5" y1="138.65" x2="217.5" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="259.833" cy="134.4" r="4.25" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<line x1="259.833" y1="138.65" x2="259.833" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="302.167" cy="134.4" r="4.25" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<line x1="302.167" y1="138.65" x2="302.167" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="344.5" cy="134.4" r="4.25" fill="#8A2F6B" stroke="#8A2F6B" stroke-width="0"/>
+<line x1="344.5" y1="138.65" x2="344.5" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<circle cx="386.833" cy="134.4" r="4.25" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="386.833" y1="138.65" x2="386.833" y2="141.2" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="24.4" y1="179.8" x2="408" y2="179.8" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<text x="12" y="116.6" font-size="4.4" fill="#1B2430" font-weight="600" data-block="b-head" class="txt">The route</text>
+<text x="132.833" y="123" font-size="2.45" fill="#B5420A" font-weight="400" data-block="safe-br" class="txt">Before real motors: e-stop in reach, speed and joint limits, command watchdog, arm stowed while driving.</text>
+<text x="48.167" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn0" class="txt stn-num">0</text>
+<text x="90.5" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn1" class="txt stn-num">1</text>
+<text x="132.833" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn2" class="txt stn-num">2</text>
+<text x="175.167" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn3" class="txt stn-num">3</text>
+<text x="217.5" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn4" class="txt stn-num">4</text>
+<text x="259.833" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn5" class="txt stn-num">5</text>
+<text x="302.167" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn6" class="txt stn-num">6</text>
+<text x="344.5" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn7" class="txt stn-num">7</text>
+<text x="386.833" y="135.6" font-size="3.6" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn8" class="txt stn-num">8</text>
+<text x="23" y="149.9" font-size="2.45" fill="#566070" font-weight="400" text-anchor="end" data-block="rl-Time" class="txt">Time</text>
+<text x="23" y="154.8" font-size="2.45" fill="#566070" font-weight="400" text-anchor="end" data-block="rl-Learn" class="txt">Learn</text>
+<text x="23" y="170.4" font-size="2.45" fill="#566070" font-weight="400" text-anchor="end" data-block="rl-Build" class="txt">Build</text>
+<text x="23" y="183" font-size="2.45" fill="#1B2430" font-weight="600" text-anchor="end" data-block="rl-Pass" class="txt">Pass</text>
+<text x="29.1" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t0" class="txt">Toolbelt</text>
+<text x="29.1" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time0" class="txt">2 weeks</text>
+<text x="29.1" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l0" data-line="0" class="txt">Git, Python environments,</text>
+<text x="29.1" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l0" data-line="1" class="txt">NumPy rotations and</text>
+<text x="29.1" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l0" data-line="2" class="txt">transforms, ROS 2</text>
+<text x="29.1" y="166.35" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l0" data-line="3" class="txt">nodes and topics.</text>
+<text x="29.1" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b0" data-line="0" class="txt">Two ROS 2 nodes that talk. A</text>
+<text x="29.1" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b0" data-line="1" class="txt">transform library in NumPy.</text>
+<text x="29.1" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p0" data-line="0" class="txt">Your composed transforms</text>
+<text x="29.1" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p0" data-line="1" class="txt">match a hand calculation.</text>
+<text x="71.433" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t1" class="txt">Describe</text>
+<text x="71.433" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time1" class="txt">2 weeks</text>
+<text x="71.433" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l1" data-line="0" class="txt">URDF robot models,</text>
+<text x="71.433" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l1" data-line="1" class="txt">the TF frame tree, RViz,</text>
+<text x="71.433" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l1" data-line="2" class="txt">mass and centre of mass.</text>
+<text x="71.433" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b1" data-line="0" class="txt">A simulated model of</text>
+<text x="71.433" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b1" data-line="1" class="txt">your robot with masses.</text>
+<text x="71.433" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p1" data-line="0" class="txt">Full TF tree. COM stays</text>
+<text x="71.433" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p1" data-line="1" class="txt">inside support in every</text>
+<text x="71.433" y="190.7" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p1" data-line="2" class="txt">planned arm pose.</text>
+<text x="113.767" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t2" class="txt">Drive</text>
+<text x="113.767" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time2" class="txt">2 weeks</text>
+<text x="113.767" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l2" data-line="0" class="txt">Differential drive, encoders,</text>
+<text x="113.767" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l2" data-line="1" class="txt">PID wheel control,</text>
+<text x="113.767" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l2" data-line="2" class="txt">odometry, ros2_control.</text>
+<text x="113.767" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b2" data-line="0" class="txt">Velocity-controlled base,</text>
+<text x="113.767" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b2" data-line="1" class="txt">in simulation and then real.</text>
+<text x="113.767" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p2" data-line="0" class="txt">Drive a 1 m square 10 times.</text>
+<text x="113.767" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p2" data-line="1" class="txt">Report the closing error.</text>
+<text x="156.1" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t3" class="txt">Reach</text>
+<text x="156.1" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time3" class="txt">3 weeks</text>
+<text x="156.1" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l3" data-line="0" class="txt">Forward and inverse</text>
+<text x="156.1" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l3" data-line="1" class="txt">kinematics, joint limits,</text>
+<text x="156.1" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l3" data-line="2" class="txt">trajectories, MoveIt 2.</text>
+<text x="156.1" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b3" data-line="0" class="txt">Arm that moves its tip</text>
+<text x="156.1" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b3" data-line="1" class="txt">to commanded points.</text>
+<text x="156.1" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p3" data-line="0" class="txt">Touch 5 marked points,</text>
+<text x="156.1" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p3" data-line="1" class="txt">10 times each. Report</text>
+<text x="156.1" y="190.7" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p3" data-line="2" class="txt">mean and worst error.</text>
+<text x="198.433" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t4" class="txt">See</text>
+<text x="198.433" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time4" class="txt">2 weeks</text>
+<text x="198.433" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l4" data-line="0" class="txt">Camera model, calibration,</text>
+<text x="198.433" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l4" data-line="1" class="txt">AprilTag poses, hand–eye</text>
+<text x="198.433" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l4" data-line="2" class="txt">calibration, OpenCV.</text>
+<text x="198.433" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b4" data-line="0" class="txt">Pipeline that gives a target</text>
+<text x="198.433" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b4" data-line="1" class="txt">pose in the base frame.</text>
+<text x="198.433" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p4" data-line="0" class="txt">Point at a tag in 5 positions.</text>
+<text x="198.433" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p4" data-line="1" class="txt">Report the error in mm.</text>
+<text x="240.767" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t5" class="txt">Press</text>
+<text x="240.767" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time5" class="txt">2 weeks</text>
+<text x="240.767" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l5" data-line="0" class="txt">Parking pose, slow approach,</text>
+<text x="240.767" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l5" data-line="1" class="txt">contact detection, force limits.</text>
+<text x="240.767" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b5" data-line="0" class="txt">First task: drive to a</text>
+<text x="240.767" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b5" data-line="1" class="txt">panel and press a button.</text>
+<text x="240.767" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p5" data-line="0" class="txt">From 1 m away: at least 16</text>
+<text x="240.767" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p5" data-line="1" class="txt">of 20 presses, no tipping.</text>
+<text x="283.1" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t6" class="txt">Pick</text>
+<text x="283.1" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time6" class="txt">3 weeks</text>
+<text x="283.1" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l6" data-line="0" class="txt">Grasp poses, friction,</text>
+<text x="283.1" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l6" data-line="1" class="txt">object detection, state</text>
+<text x="283.1" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l6" data-line="2" class="txt">machines, recovery on failure.</text>
+<text x="283.1" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b6" data-line="0" class="txt">Second task: find, grasp</text>
+<text x="283.1" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b6" data-line="1" class="txt">and lift one object.</text>
+<text x="283.1" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p6" data-line="0" class="txt">At least 14 of 20 picks, with</text>
+<text x="283.1" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p6" data-line="1" class="txt">failures logged by cause.</text>
+<text x="325.433" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t7" class="txt">Learn</text>
+<text x="325.433" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time7" class="txt">4 weeks</text>
+<text x="325.433" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l7" data-line="0" class="txt">Teleoperation, demonstration</text>
+<text x="325.433" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l7" data-line="1" class="txt">data, ACT and Diffusion</text>
+<text x="325.433" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l7" data-line="2" class="txt">Policy, LeRobot, PyTorch.</text>
+<text x="325.433" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b7" data-line="0" class="txt">A policy trained from</text>
+<text x="325.433" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b7" data-line="1" class="txt">your own demonstrations</text>
+<text x="325.433" y="178.1" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b7" data-line="2" class="txt">for the pick.</text>
+<text x="325.433" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p7" data-line="0" class="txt">Compare with stop 6 on the</text>
+<text x="325.433" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p7" data-line="1" class="txt">same 20 trials. Either result</text>
+<text x="325.433" y="190.7" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p7" data-line="2" class="txt">is valid if you can explain it.</text>
+<text x="367.767" y="145.4" font-size="3.6" fill="#1B2430" font-weight="600" data-block="t8" class="txt">Mission</text>
+<text x="367.767" y="149.9" font-size="2.45" fill="#566070" font-weight="400" data-block="time8" class="txt">2 weeks</text>
+<text x="367.767" y="154.8" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l8" data-line="0" class="txt">System integration,</text>
+<text x="367.767" y="158.65" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l8" data-line="1" class="txt">behaviour trees, rosbag2</text>
+<text x="367.767" y="162.5" font-size="2.75" fill="#1B2430" font-weight="400" data-block="l8" data-line="2" class="txt">logs, failure analysis.</text>
+<text x="367.767" y="170.4" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b8" data-line="0" class="txt">Drive, press, pick and</text>
+<text x="367.767" y="174.25" font-size="2.75" fill="#1B2430" font-weight="400" data-block="b8" data-line="1" class="txt">return as one program.</text>
+<text x="367.767" y="183" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p8" data-line="0" class="txt">10 logged missions</text>
+<text x="367.767" y="186.85" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p8" data-line="1" class="txt">with a failure</text>
+<text x="367.767" y="190.7" font-size="2.75" fill="#1B2430" font-weight="600" data-block="p8" data-line="2" class="txt">breakdown, and a demo.</text>
+<text x="12" y="199.2" font-size="2.45" fill="#566070" font-weight="400" data-block="gpu-note" class="txt">GPU needed only at stop 7. LeRobot usually needs a thin bridge to ROS 2.</text>
+<text x="408" y="199.2" font-size="2.45" fill="#566070" font-weight="400" text-anchor="end" data-block="meas-note" class="txt">Report k of n, not a percentage. 8 of 10 is compatible with a true rate of 49–94% (95% Wilson interval), so use 20 or more trials to compare.</text>
+<line x1="37.28" y1="229.55" x2="39.28" y2="229.55" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="40.38,229.55 39.28,230 39.28,229.1" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="66.06" y1="229.55" x2="68.06" y2="229.55" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="69.16,229.55 68.06,230 68.06,229.1" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="94.84" y1="229.55" x2="96.84" y2="229.55" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="97.94,229.55 96.84,230 96.84,229.1" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="123.62" y1="229.55" x2="125.62" y2="229.55" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="126.72,229.55 125.62,230 125.62,229.1" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="139.56" y1="240.6" x2="139.56" y2="244.2" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="24.44" y1="244.2" x2="139.56" y2="244.2" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="24.44" y1="244.2" x2="24.44" y2="244.1" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="24.44,243 24.89,244.1 23.99,244.1" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="12" y1="250.9" x2="152" y2="250.9" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="20.147" y1="264.75" x2="21.547" y2="264.75" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="22.547,264.75 21.547,265.15 21.547,264.35" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="34.007" y1="264.75" x2="35.407" y2="264.75" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="36.407,264.75 35.407,265.15 35.407,264.35" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="52.807" y1="264.75" x2="54.207" y2="264.75" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="55.207,264.75 54.207,265.15 54.207,264.35" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="61.258" y1="264.75" x2="62.658" y2="264.75" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="63.658,264.75 62.658,265.15 62.658,264.35" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="75.074" y1="264.75" x2="76.474" y2="264.75" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="77.474,264.75 76.474,265.15 76.474,264.35" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="99.784" y1="266.6" x2="99.784" y2="271.6" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="99.784" y1="271.6" x2="12.8" y2="271.6" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="12.8" y1="271.6" x2="12.8" y2="268.1" stroke="#1B2430" stroke-width="0.25" stroke-linecap="butt"/>
+<polygon points="12.8,267.1 13.2,268.1 12.4,268.1" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line x1="160" y1="231.6" x2="331" y2="231.6" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="160" y1="238.95" x2="331" y2="238.95" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="160" y1="244.9" x2="331" y2="244.9" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="160" y1="250.85" x2="331" y2="250.85" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="160" y1="256.8" x2="331" y2="256.8" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<line x1="340" y1="229.1" x2="341.7" y2="229.1" stroke="#C7CDD6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="340" y1="235.25" x2="341.7" y2="235.25" stroke="#C7CDD6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="340" y1="244.85" x2="341.7" y2="244.85" stroke="#C7CDD6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="340" y1="251" x2="341.7" y2="251" stroke="#C7CDD6" stroke-width="0.5" stroke-linecap="butt"/>
+<line x1="340" y1="260.6" x2="341.7" y2="260.6" stroke="#C7CDD6" stroke-width="0.5" stroke-linecap="butt"/>
+<text x="12" y="216.8" font-size="4.4" fill="#1B2430" font-weight="600" data-block="c-head" class="txt">How it fits</text>
+<text x="12" y="224.6" font-size="3.6" fill="#1B2430" font-weight="600" data-block="loop-t" class="txt">What runs on the robot</text>
+<text x="12" y="230.4" font-size="2.75" fill="#1B2430" font-weight="600" data-block="loop-n0" class="txt">Sense</text>
+<text x="12" y="234.1" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p0" data-line="0" class="txt">camera · wheel</text>
+<text x="12" y="237.55" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p0" data-line="1" class="txt">encoders · joint</text>
+<text x="12" y="241" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p0" data-line="2" class="txt">encoders · servo load</text>
+<text x="40.78" y="230.4" font-size="2.75" fill="#1B2430" font-weight="600" data-block="loop-n1" class="txt">Estimate</text>
+<text x="40.78" y="234.1" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p1" data-line="0" class="txt">odometry · tag</text>
+<text x="40.78" y="237.55" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p1" data-line="1" class="txt">pose · TF frames</text>
+<text x="69.56" y="230.4" font-size="2.75" fill="#1B2430" font-weight="600" data-block="loop-n2" class="txt">Decide</text>
+<text x="69.56" y="234.1" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p2" data-line="0" class="txt">state machine ·</text>
+<text x="69.56" y="237.55" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p2" data-line="1" class="txt">planner · policy</text>
+<text x="98.34" y="230.4" font-size="2.75" fill="#1B2430" font-weight="600" data-block="loop-n3" class="txt">Act</text>
+<text x="98.34" y="234.1" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p3" data-line="0" class="txt">wheel PID · joint</text>
+<text x="98.34" y="237.55" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p3" data-line="1" class="txt">control · gripper</text>
+<text x="127.12" y="230.4" font-size="2.75" fill="#1B2430" font-weight="600" data-block="loop-n4" class="txt">Physics</text>
+<text x="127.12" y="234.1" font-size="2.45" fill="#566070" font-weight="400" data-block="loop-p4" data-line="0" class="txt">gravity · slip · contact</text>
+<text x="12" y="248.4" font-size="2.45" fill="#566070" font-weight="400" data-block="rates" class="txt">Typical rates: control 50–100 Hz · camera 30 Hz · policy 10–30 Hz · task about 1 Hz</text>
+<text x="12" y="255.4" font-size="2.75" fill="#B5420A" font-weight="600" data-block="safe-band" class="txt">Safety overrides everything.</text>
+<text x="12" y="260.8" font-size="3.6" fill="#1B2430" font-weight="600" data-block="imp-t" class="txt">How you improve it</text>
+<text x="12" y="265.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="imp0" class="txt">Model</text>
+<text x="23.447" y="265.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="imp1" class="txt">Simulate</text>
+<text x="37.307" y="265.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="imp2" class="txt">Run on robot</text>
+<text x="56.107" y="265.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="imp3" class="txt">Log</text>
+<text x="64.558" y="265.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="imp4" class="txt">Measure</text>
+<text x="78.374" y="265.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="imp5" class="txt">Change one thing</text>
+<text x="160" y="224.6" font-size="3.6" fill="#1B2430" font-weight="600" data-block="tbl-t" class="txt">Five ways to decide</text>
+<text x="160" y="229.9" font-size="2.45" fill="#566070" font-weight="600" data-block="tbl-h-Method" class="txt">Method</text>
+<text x="198" y="229.9" font-size="2.45" fill="#566070" font-weight="600" data-block="tbl-h-You supply" class="txt">You supply</text>
+<text x="247" y="229.9" font-size="2.45" fill="#566070" font-weight="600" data-block="tbl-h-Breaks when" class="txt">Breaks when</text>
+<text x="317.5" y="229.9" font-size="2.45" fill="#566070" font-weight="600" data-block="tbl-h-Stop" class="txt">Stop</text>
+<text x="160" y="235.4" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl0-0" data-line="0" class="txt">Scripted state machine</text>
+<text x="198" y="235.4" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl0-1" data-line="0" class="txt">Steps and thresholds</text>
+<text x="247" y="235.4" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl0-2" data-line="0" class="txt">The situation was not planned for</text>
+<text x="317.5" y="235.4" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl0-3" data-line="0" class="txt">5–6</text>
+<text x="160" y="241.35" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl1-0" data-line="0" class="txt">Model-based planning</text>
+<text x="198" y="241.35" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl1-1" data-line="0" class="txt">Robot and scene geometry</text>
+<text x="247" y="241.35" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl1-2" data-line="0" class="txt">The model or sensing is wrong</text>
+<text x="317.5" y="241.35" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl1-3" data-line="0" class="txt">3–6</text>
+<text x="160" y="247.3" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl2-0" data-line="0" class="txt">Imitation learning</text>
+<text x="198" y="247.3" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl2-1" data-line="0" class="txt">Human demonstrations</text>
+<text x="247" y="247.3" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl2-2" data-line="0" class="txt">The scene differs from the demos</text>
+<text x="317.5" y="247.3" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl2-3" data-line="0" class="txt">7</text>
+<text x="160" y="253.25" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl3-0" data-line="0" class="txt">Reinforcement learning</text>
+<text x="198" y="253.25" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl3-1" data-line="0" class="txt">Simulator and reward</text>
+<text x="247" y="253.25" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl3-2" data-line="0" class="txt">The reward or simulator misleads</text>
+<text x="317.5" y="253.25" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl3-3" data-line="0" class="txt">Next</text>
+<text x="160" y="259.2" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl4-0" data-line="0" class="txt">Foundation models (VLA)</text>
+<text x="198" y="259.2" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl4-1" data-line="0" class="txt">Pretrained vision-language-action</text>
+<text x="198" y="262.65" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl4-1" data-line="1" class="txt">model, your data</text>
+<text x="247" y="259.2" font-size="2.45" fill="#566070" font-weight="400" data-block="tbl4-2" data-line="0" class="txt">Too slow, or failures are hard to explain</text>
+<text x="317.5" y="259.2" font-size="2.45" fill="#1B2430" font-weight="400" data-block="tbl4-3" data-line="0" class="txt">Next</text>
+<text x="340" y="224.6" font-size="3.6" fill="#1B2430" font-weight="600" data-block="aft-t" class="txt">After the mission</text>
+<text x="344.4" y="229.9" font-size="2.45" fill="#1B2430" font-weight="400" data-block="aft0" data-line="0" class="txt">Reach while moving: whole-body control</text>
+<text x="344.4" y="236.05" font-size="2.45" fill="#1B2430" font-weight="400" data-block="aft1" data-line="0" class="txt">Self-balance on two wheels:</text>
+<text x="344.4" y="239.5" font-size="2.45" fill="#1B2430" font-weight="400" data-block="aft1" data-line="1" class="txt">inverted pendulum, IMU, LQR</text>
+<text x="344.4" y="245.65" font-size="2.45" fill="#1B2430" font-weight="400" data-block="aft2" data-line="0" class="txt">Map the room: SLAM and Nav2</text>
+<text x="344.4" y="251.8" font-size="2.45" fill="#1B2430" font-weight="400" data-block="aft3" data-line="0" class="txt">Train in simulation: RL with MuJoCo</text>
+<text x="344.4" y="255.25" font-size="2.45" fill="#1B2430" font-weight="400" data-block="aft3" data-line="1" class="txt">Playground or Isaac Lab (GPU)</text>
+<text x="344.4" y="261.4" font-size="2.45" fill="#1B2430" font-weight="400" data-block="aft4" data-line="0" class="txt">Take instructions: foundation models such as SmolVLA</text>
+<text x="12" y="280.4" font-size="2.45" fill="#566070" font-weight="400" data-block="foot-l" data-line="0" class="txt">Times are planning estimates at about 8 hours per week, about 22 weeks in total, not</text>
+<text x="12" y="283.85" font-size="2.45" fill="#566070" font-weight="400" data-block="foot-l" data-line="1" class="txt">measurements. Pass targets are starter values: tune them to your hardware and justify the change.</text>
+<text x="408" y="280.4" font-size="2.45" fill="#566070" font-weight="400" text-anchor="end" data-block="foot-r" data-line="0" class="txt">Reference kit, checked Nov 2026: SO-101 arm (5 joints + gripper) · 2 geared DC motors with encoders · caster · single-board computer ·</text>
+<text x="408" y="283.85" font-size="2.45" fill="#566070" font-weight="400" text-anchor="end" data-block="foot-r" data-line="1" class="txt">camera · Ubuntu 24.04, ROS 2 Jazzy, Gazebo Harmonic. One option, not an endorsement. Check driver support before choosing a newer ROS 2.</text>
+</svg>

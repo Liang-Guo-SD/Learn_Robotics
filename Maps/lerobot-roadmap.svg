@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" version="1.1">
+<title>The LeRobot Learning Roadmap</title>
+<desc>One-page learning roadmap for students who know ROS 2 and OpenCV: how LeRobot works, eleven stages on one metro line from setting up three computers to pressing a button and picking up a cup, what each of three computers does, what one horizontal lidar plane can and cannot see, and a four-step ladder for mastering it.</desc>
+<style>text{font-family:"Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif; white-space:pre}</style>
+<rect class="swatch" x="250" y="24.25" width="2.35" height="2.35" fill="#0B5F9E" stroke="#0B5F9E" stroke-width="0"/>
+<rect class="swatch" x="265.146" y="24.25" width="2.35" height="2.35" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<rect class="swatch" x="288.419" y="24.25" width="2.35" height="2.35" fill="#8A2F6B" stroke="#8A2F6B" stroke-width="0"/>
+<rect class="swatch" x="301.428" y="24.25" width="2.35" height="2.35" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<rect class="swatch" x="316.42" y="24.25" width="2.35" height="2.35" fill="#B5420A" stroke="#B5420A" stroke-width="0"/>
+<line class="rule" x1="12" y1="32.582" x2="408" y2="32.582" stroke="#C7CDD6" stroke-width="0.25" stroke-linecap="butt"/>
+<line class="step-arrow" x1="28.552" y1="50.099" x2="44.95" y2="50.099" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="46.25,50.099 44.95,50.574 44.95,49.624" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="step-arrow" x1="58.04" y1="50.099" x2="80.6" y2="50.099" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="81.9,50.099 80.6,50.574 80.6,49.624" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="step-arrow" x1="90.83" y1="50.099" x2="116.25" y2="50.099" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="117.55,50.099 116.25,50.574 116.25,49.624" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<path class="improve-loop" d="M 134.475 71.201 L 134.475 74.419 L 63.175 74.419 L 63.175 72.551" fill="none" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon class="improve-head" points="63.175,71.251 63.65,72.551 62.7,72.551" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<rect class="seg" data-bar="state" data-group="0" x="320.5" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="0" x="322.87" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="0" x="325.24" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="0" x="327.61" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="0" x="329.98" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="0" x="332.35" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="0" x="334.72" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="1" x="338.14" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="1" x="340.51" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="343.93" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="346.3" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="348.67" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="351.04" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="353.41" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="355.78" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="358.15" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="360.52" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="362.89" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="365.26" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="367.63" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="370" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="372.37" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="374.74" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="377.11" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="state" data-group="2" x="379.48" y="58.381" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="0" x="320.5" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="0" x="322.87" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="0" x="325.24" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="0" x="327.61" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="0" x="329.98" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="0" x="332.35" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="0" x="334.72" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="1" x="338.14" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<rect class="seg" data-bar="action" data-group="1" x="340.51" y="68.825" width="2.05" height="1.55" fill="#1B2430" stroke="none"/>
+<path class="metro" data-seg="0" d="M 30 89.113 L 93 89.113" fill="none" stroke="#0B5F9E" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="1" d="M 93 89.113 L 156 89.113" fill="none" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="2" d="M 156 89.113 L 219 89.113" fill="none" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="3" d="M 219 89.113 L 282 89.113" fill="none" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="4" d="M 282 89.113 L 345 89.113" fill="none" stroke="#00695C" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="5" d="M 345 89.113 L 403.2 89.113 L 405.6 91.513 L 405.6 148.661 L 403.2 151.061 L 37.457 151.061 L 30 158.518" fill="none" stroke="#8A2F6B" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="6" d="M 30 158.518 L 93 158.518" fill="none" stroke="#8A2F6B" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="7" d="M 93 158.518 L 156 158.518" fill="none" stroke="#8A2F6B" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="8" d="M 156 158.518 L 219 158.518" fill="none" stroke="#8A2F6B" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<path class="metro" data-seg="9" d="M 219 158.518 L 282 158.518" fill="none" stroke="#1B2430" stroke-width="1.6" stroke-linecap="butt" stroke-linejoin="miter"/>
+<circle class="stn-disc" data-station="0" cx="30" cy="89.113" r="2.55" fill="#0B5F9E" stroke="#0B5F9E" stroke-width="0"/>
+<circle class="stn-disc" data-station="1" cx="93" cy="89.113" r="2.55" fill="#0B5F9E" stroke="#0B5F9E" stroke-width="0"/>
+<circle class="stn-disc" data-station="2" cx="156" cy="89.113" r="2.55" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<circle class="stn-disc" data-station="3" cx="219" cy="89.113" r="2.55" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<circle class="stn-disc" data-station="4" cx="282" cy="89.113" r="2.55" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<circle class="stn-disc" data-station="5" cx="345" cy="89.113" r="2.55" fill="#00695C" stroke="#00695C" stroke-width="0"/>
+<circle class="stn-disc" data-station="6" cx="30" cy="158.518" r="2.55" fill="#8A2F6B" stroke="#8A2F6B" stroke-width="0"/>
+<circle class="stn-disc" data-station="7" cx="93" cy="158.518" r="2.55" fill="#8A2F6B" stroke="#8A2F6B" stroke-width="0"/>
+<circle class="stn-disc" data-station="8" cx="156" cy="158.518" r="2.55" fill="#8A2F6B" stroke="#8A2F6B" stroke-width="0"/>
+<circle class="stn-disc" data-station="9" cx="219" cy="158.518" r="2.55" fill="#8A2F6B" stroke="#8A2F6B" stroke-width="0"/>
+<circle class="stn-ring" data-station="10" cx="282" cy="158.518" r="3.35" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle class="stn-disc" data-station="10" cx="282" cy="158.518" r="2.55" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<path class="safety-bracket" d="M 152.4 88.263 L 152.4 86.063 L 348.6 86.063 L 348.6 88.263" fill="none" stroke="#B5420A" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter"/>
+<circle class="node" data-node="0" data-name="Robot-Orin" cx="12" cy="224.369" r="1" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<circle class="node" data-node="1" data-name="Station-Orin" cx="55.5" cy="224.369" r="1" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<circle class="node" data-node="2" data-name="DGX-Spark" cx="99" cy="224.369" r="1" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<line class="flow-2way" data-link="wired" x1="14.3" y1="224.369" x2="53.2" y2="224.369" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon class="flow-2way" data-link="wired" points="54.5,224.369 53.2,224.844 53.2,223.894" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<polygon class="flow-2way" data-link="wired" points="13,224.369 14.3,223.894 14.3,224.844" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="flow-1way" x1="56.5" y1="224.369" x2="96.7" y2="224.369" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon class="flow-1way" data-link="datasets" points="98,224.369 96.7,224.844 96.7,223.894" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<path class="ret-line" d="M 99 225.369 L 99 234.369 L 12 234.369 L 12 226.719" fill="none" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter"/>
+<polygon class="ret-head" data-head="Robot Orin" points="12,225.369 12.475,226.719 11.525,226.719" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="ret-branch" x1="55.5" y1="234.369" x2="55.5" y2="226.719" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon class="ret-head" data-head="Station Orin" points="55.5,225.369 55.975,226.719 55.025,226.719" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="floor" x1="165" y1="255.58" x2="265" y2="255.58" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line class="wall" x1="265" y1="223.38" x2="265" y2="255.58" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<rect class="panel" x="260" y="236.18" width="5" height="8.8" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<circle class="button" cx="262.4" cy="238.98" r="1" fill="#1B2430" stroke="#1B2430" stroke-width="0.5"/>
+<rect class="tabletop" x="218" y="237.58" width="40" height="1.6" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<rect class="table-leg" x="222.9" y="239.18" width="2.3" height="16.4" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<rect class="table-leg2" x="247" y="239.18" width="2.4" height="16.4" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<polygon class="cup" points="225.4,231.08 231.4,231.08 230.95,237.58 225.85,237.58" fill="none" stroke="#1B2430" stroke-width="0.8" stroke-linejoin="miter"/>
+<ellipse class="cup-rim" cx="228.4" cy="231.08" rx="3" ry="0.62" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<rect class="chassis" x="169" y="242.58" width="36" height="5.5" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<circle class="wheel" cx="179" cy="250.58" r="5" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<circle class="hub" cx="179" cy="250.58" r="0.55" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<line class="caster-strut" x1="202.4" y1="248.08" x2="202.4" y2="254.28" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<circle class="caster" cx="202.4" cy="254.28" r="1.3" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<rect class="lidar-puck" x="201.6" y="240.78" width="3" height="1.8" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<line class="lidar-ray" x1="204.6" y1="241.68" x2="222.9" y2="241.68" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<circle class="hit" cx="222.9" cy="241.68" r="0.58" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<rect class="arm-base" x="192.6" y="241.68" width="4.8" height="0.9" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<polygon class="arm-column" points="193.1,241.68 196.9,241.68 195.9,235.88 194.1,235.88" fill="none" stroke="#1B2430" stroke-width="0.8" stroke-linejoin="miter"/>
+<line class="upper-arm" x1="195" y1="235.58" x2="208.867" y2="225.501" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line class="forearm" x1="208.867" y1="225.501" x2="225.8" y2="228.18" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<rect class="palm" x="225.8" y="226.78" width="5.2" height="1.8" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<rect class="carriage" x="220.4" y="228.88" width="5.4" height="0.7" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<rect class="carriage" x="231" y="228.88" width="5.4" height="0.7" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<rect class="jaw" x="220.8" y="229.58" width="0.7" height="4.6" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<rect class="jaw" x="235.3" y="229.58" width="0.7" height="4.6" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<circle class="joint" data-joint="base" cx="195" cy="242.18" r="0.45" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle class="joint" data-joint="shoulder" cx="195" cy="235.58" r="0.45" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle class="joint" data-joint="elbow" cx="208.867" cy="225.501" r="0.45" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle class="joint" data-joint="wrist1" cx="225.8" cy="228.18" r="0.45" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle class="joint" data-joint="wrist2" cx="228.4" cy="228.08" r="0.45" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<circle class="joint" data-joint="wrist3" cx="231" cy="227.98" r="0.45" fill="none" stroke="#1B2430" stroke-width="0.5"/>
+<line class="mast" x1="171.2" y1="242.58" x2="171.2" y2="230.08" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<rect class="cam-head" x="169.2" y="228.38" width="4" height="1.7" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<circle class="lens" cx="172.9" cy="229.23" r="0.42" fill="#1B2430" stroke="#1B2430" stroke-width="0.25"/>
+<line class="cam-axis" x1="173.35" y1="229.25" x2="179.174" y2="229.783" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="180.17,229.874 179.138,230.181 179.211,229.384" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<rect class="cam-wrist" x="222.2" y="229.88" width="1.5" height="1.1" fill="none" stroke="#1B2430" stroke-width="0.8"/>
+<line class="wrist-bracket" x1="222.7" y1="229.58" x2="222.7" y2="229.88" stroke="#1B2430" stroke-width="0.8" stroke-linecap="butt"/>
+<line class="cam-wrist-axis" x1="223.7" y1="230.48" x2="224.644" y2="231.646" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="225.21,232.345 224.372,231.866 224.916,231.425" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="ladder-arrow" x1="300.579" y1="223.63" x2="301.979" y2="223.63" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="303.179,223.63 301.979,224.08 301.979,223.18" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="ladder-arrow" x1="335.371" y1="223.63" x2="336.771" y2="223.63" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="337.971,223.63 336.771,224.08 336.771,223.18" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<line class="ladder-arrow" x1="368.104" y1="223.63" x2="369.504" y2="223.63" stroke="#1B2430" stroke-width="0.5" stroke-linecap="butt"/>
+<polygon points="370.704,223.63 369.504,224.08 369.504,223.18" fill="#1B2430" stroke="none" stroke-width="0" stroke-linejoin="miter"/>
+<circle class="bullet" cx="282.8" cy="235.733" r="0.4" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<circle class="bullet" cx="282.8" cy="244.826" r="0.4" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<circle class="bullet" cx="282.8" cy="253.92" r="0.4" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<circle class="bullet" cx="282.8" cy="263.013" r="0.4" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<circle class="bullet" cx="282.8" cy="272.107" r="0.4" fill="#1B2430" stroke="#1B2430" stroke-width="0"/>
+<text x="12" y="23.2" font-size="11" fill="#1B2430" font-weight="600" data-block="title" class="txt">The LeRobot Learning Roadmap</text>
+<text x="12" y="30.376" font-size="2.75" fill="#566070" font-weight="400" data-block="sub" data-line="0" data-w="262" class="txt">From ROS 2 and OpenCV skills to a two-wheeled 6+1 DoF arm that presses a button and picks up a cup.</text>
+<text x="250" y="20.4" font-size="2.45" fill="#1B2430" font-weight="400" data-block="howto" data-line="0" data-w="158" class="txt">Follow the numbers. Move on only when you can meet Pass and answer Explain.</text>
+<text x="252.9" y="26.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="phase-Prepare" class="txt">Prepare</text>
+<text x="268.046" y="26.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="phase-Build the robot" class="txt">Build the robot</text>
+<text x="291.319" y="26.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="phase-Teach" class="txt">Teach</text>
+<text x="304.328" y="26.6" font-size="2.45" fill="#1B2430" font-weight="400" data-block="phase-Mission" class="txt">Mission</text>
+<text x="319.32" y="26.6" font-size="2.45" fill="#B5420A" font-weight="400" data-block="phase-safety" class="txt">Safety and limits</text>
+<text x="12" y="37.882" font-size="4.4" fill="#1B2430" font-weight="600" data-block="a-head" class="txt">How LeRobot works</text>
+<text x="156" y="37.882" font-size="4.4" fill="#1B2430" font-weight="600" data-block="a-parts-head" class="txt">The five parts</text>
+<text x="282" y="37.882" font-size="4.4" fill="#1B2430" font-weight="600" data-block="a-time-head" class="txt">One time step in your dataset</text>
+<text x="12" y="42.793" font-size="2.75" fill="#1B2430" font-weight="400" data-block="a-lead" data-line="0" data-w="138" class="txt">LeRobot learns a task by copying you. You drive the robot, it saves what the robot sensed and what you</text>
+<text x="12" y="46.593" font-size="2.75" fill="#1B2430" font-weight="400" data-block="a-lead" data-line="1" data-w="138" class="txt">commanded, and a neural network learns to produce the same commands from the same observations.</text>
+<text x="12" y="50.949" font-size="2.75" fill="#1B2430" font-weight="600" data-block="step-name0" class="txt">Teleoperate</text>
+<text x="12" y="54.966" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent0" data-line="0" data-w="31.05" class="txt">You command the</text>
+<text x="12" y="58.766" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent0" data-line="1" data-w="31.05" class="txt">robot with a leader</text>
+<text x="12" y="62.566" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent0" data-line="2" data-w="31.05" class="txt">arm and gamepad.</text>
+<text x="12" y="66.366" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent0" data-line="3" data-w="31.05" class="txt">Nothing is learned yet.</text>
+<text x="47.65" y="50.949" font-size="2.75" fill="#1B2430" font-weight="600" data-block="step-name1" class="txt">Record</text>
+<text x="47.65" y="54.966" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent1" data-line="0" data-w="31.05" class="txt">Each attempt becomes</text>
+<text x="47.65" y="58.766" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent1" data-line="1" data-w="31.05" class="txt">an episode: video,</text>
+<text x="47.65" y="62.566" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent1" data-line="2" data-w="31.05" class="txt">state and action</text>
+<text x="47.65" y="66.366" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent1" data-line="3" data-w="31.05" class="txt">at every time step.</text>
+<text x="83.3" y="50.949" font-size="2.75" fill="#1B2430" font-weight="600" data-block="step-name2" class="txt">Train</text>
+<text x="83.3" y="54.966" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent2" data-line="0" data-w="31.05" class="txt">A policy learns</text>
+<text x="83.3" y="58.766" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent2" data-line="1" data-w="31.05" class="txt">to predict your</text>
+<text x="83.3" y="62.566" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent2" data-line="2" data-w="31.05" class="txt">actions from each</text>
+<text x="83.3" y="66.366" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent2" data-line="3" data-w="31.05" class="txt">recorded observation.</text>
+<text x="118.95" y="50.949" font-size="2.75" fill="#1B2430" font-weight="600" data-block="step-name3" class="txt">Deploy</text>
+<text x="118.95" y="54.966" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent3" data-line="0" data-w="31.05" class="txt">The policy drives</text>
+<text x="118.95" y="58.766" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent3" data-line="1" data-w="31.05" class="txt">the robot. You count</text>
+<text x="118.95" y="62.566" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent3" data-line="2" data-w="31.05" class="txt">real successes,</text>
+<text x="118.95" y="66.366" font-size="2.75" fill="#1B2430" font-weight="400" data-block="step-sent3" data-line="3" data-w="31.05" class="txt">not training loss.</text>
+<text x="12" y="70.322" font-size="2.45" fill="#1B2430" font-weight="400" data-block="step-cmd0" class="txt"><tspan font-family="Menlo,Consolas,monospace">lerobot-teleoperate</tspan></text>
+<text x="47.65" y="70.322" font-size="2.45" fill="#1B2430" font-weight="400" data-block="step-cmd1" class="txt"><tspan font-family="Menlo,Consolas,monospace">lerobot-record</tspan></text>
+<text x="83.3" y="70.322" font-size="2.45" fill="#1B2430" font-weight="400" data-block="step-cmd2" class="txt"><tspan font-family="Menlo,Consolas,monospace">lerobot-train</tspan></text>
+<text x="118.95" y="70.322" font-size="2.45" fill="#1B2430" font-weight="400" data-block="step-cmd3" class="txt"><tspan font-family="Menlo,Consolas,monospace">lerobot-rollout</tspan></text>
+<text x="12" y="77.069" font-size="2.45" fill="#1B2430" font-weight="400" data-block="loop-label" class="txt">Improve: take over when it fails. Your corrections become new data.</text>
+<text x="89.062" y="77.069" font-size="2.45" fill="#1B2430" font-weight="400" data-block="loop-cmd" class="txt"><tspan font-family="Menlo,Consolas,monospace">--strategy.type=dagger</tspan></text>
+<text x="156" y="42.793" font-size="2.45" fill="#1B2430" font-weight="400" data-block="part-Robot" class="txt"><tspan font-family="Menlo,Consolas,monospace">Robot</tspan></text>
+<text x="178.5" y="42.793" font-size="2.75" fill="#1B2430" font-weight="400" data-block="partmean-Robot" data-line="0" data-w="97.5" class="txt"><tspan>Your hardware as a Python class: </tspan><tspan font-family="Menlo,Consolas,monospace">get_observation()</tspan></text>
+<text x="178.5" y="46.593" font-size="2.75" fill="#1B2430" font-weight="400" data-block="partmean-Robot" data-line="1" data-w="97.5" class="txt"><tspan>reads it, </tspan><tspan font-family="Menlo,Consolas,monospace">send_action()</tspan><tspan> moves it.</tspan></text>
+<text x="156" y="54.212" font-size="2.45" fill="#1B2430" font-weight="400" data-block="part-Teleoperator" class="txt"><tspan font-family="Menlo,Consolas,monospace">Teleoperator</tspan></text>
+<text x="178.5" y="54.212" font-size="2.75" fill="#1B2430" font-weight="400" data-block="partmean-Teleoperator" data-line="0" data-w="97.5" class="txt"><tspan>The human as a Python class: </tspan><tspan font-family="Menlo,Consolas,monospace">get_action()</tspan><tspan> returns your command.</tspan></text>
+<text x="156" y="61.831" font-size="2.45" fill="#1B2430" font-weight="400" data-block="part-Processor" class="txt"><tspan font-family="Menlo,Consolas,monospace">Processor</tspan></text>
+<text x="178.5" y="61.831" font-size="2.75" fill="#1B2430" font-weight="400" data-block="partmean-Processor" data-line="0" data-w="97.5" class="txt">Converts and limits data between teleoperator, dataset and robot.</text>
+<text x="156" y="69.45" font-size="2.45" fill="#1B2430" font-weight="400" data-block="part-LeRobotDataset" class="txt"><tspan font-family="Menlo,Consolas,monospace">LeRobotDataset</tspan></text>
+<text x="178.5" y="69.45" font-size="2.75" fill="#1B2430" font-weight="400" data-block="partmean-LeRobotDataset" data-line="0" data-w="97.5" class="txt"><tspan>Numbers in Parquet, video in MP4, schema and statistics in </tspan><tspan font-family="Menlo,Consolas,monospace">meta/</tspan><tspan>.</tspan></text>
+<text x="156" y="77.069" font-size="2.45" fill="#1B2430" font-weight="400" data-block="part-Policy" class="txt"><tspan font-family="Menlo,Consolas,monospace">Policy</tspan></text>
+<text x="178.5" y="77.069" font-size="2.75" fill="#1B2430" font-weight="400" data-block="partmean-Policy" data-line="0" data-w="97.5" class="txt">A network that turns one observation into a chunk of future actions.</text>
+<text x="282" y="42.793" font-size="2.45" fill="#1B2430" font-weight="400" data-block="feat-observation.images.wrist" class="txt"><tspan font-family="Menlo,Consolas,monospace">observation.images.wrist</tspan></text>
+<text x="320.5" y="42.793" font-size="2.45" fill="#1B2430" font-weight="400" data-block="note-observation.images.wrist" class="txt">video</text>
+<text x="282" y="49.487" font-size="2.45" fill="#1B2430" font-weight="400" data-block="feat-observation.images.head" class="txt"><tspan font-family="Menlo,Consolas,monospace">observation.images.head</tspan></text>
+<text x="320.5" y="49.487" font-size="2.45" fill="#1B2430" font-weight="400" data-block="note-observation.images.head" class="txt">video</text>
+<text x="282" y="56.181" font-size="2.45" fill="#1B2430" font-weight="400" data-block="feat-observation.state" class="txt"><tspan font-family="Menlo,Consolas,monospace">observation.state</tspan></text>
+<text x="320.5" y="56.181" font-size="2.45" fill="#1B2430" font-weight="400" data-block="note-observation.state" class="txt">25 numbers: 7 arm + 2 base + 16 lidar</text>
+<text x="282" y="66.625" font-size="2.45" fill="#1B2430" font-weight="400" data-block="feat-action" class="txt"><tspan font-family="Menlo,Consolas,monospace">action</tspan></text>
+<text x="320.5" y="66.625" font-size="2.45" fill="#1B2430" font-weight="400" data-block="note-action" class="txt">9 numbers: 7 arm + x.vel + theta.vel</text>
+<text x="282" y="77.069" font-size="2.45" fill="#566070" font-weight="400" data-block="time-note" data-line="0" data-w="126" class="txt">Predicting a chunk of actions at once keeps motion smooth and limits compounding errors.</text>
+<text x="12" y="83.316" font-size="4.4" fill="#1B2430" font-weight="600" data-block="b-head" class="txt">The roadmap</text>
+<text x="30" y="90.113" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-0" data-station="0" class="txt">0</text>
+<text x="93" y="90.113" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-1" data-station="1" class="txt">1</text>
+<text x="156" y="90.113" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-2" data-station="2" class="txt">2</text>
+<text x="219" y="90.113" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-3" data-station="3" class="txt">3</text>
+<text x="282" y="90.113" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-4" data-station="4" class="txt">4</text>
+<text x="345" y="90.113" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-5" data-station="5" class="txt">5</text>
+<text x="30" y="159.518" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-6" data-station="6" class="txt">6</text>
+<text x="93" y="159.518" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-7" data-station="7" class="txt">7</text>
+<text x="156" y="159.518" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-8" data-station="8" class="txt">8</text>
+<text x="219" y="159.518" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-9" data-station="9" class="txt">9</text>
+<text x="282" y="159.518" font-size="2.75" fill="#FFFFFF" font-weight="600" text-anchor="middle" data-block="stn-num-10" data-station="10" class="txt">10</text>
+<text x="156" y="84.466" font-size="2.45" fill="#B5420A" font-weight="400" data-block="safety-label" class="txt">From stage 2 to the end, before any motor moves: e-stop in reach, joint and speed limits set, watchdog armed, arm stowed while driving.</text>
+<text x="12" y="102.73" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-0-learn" class="txt">Learn</text>
+<text x="12" y="111.767" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-0-do" class="txt">Do</text>
+<text x="12" y="123.993" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-0-on" class="txt">On</text>
+<text x="12" y="129.84" font-size="2.45" fill="#1B2430" font-weight="600" data-block="gutter-0-pass" class="txt">Pass</text>
+<text x="12" y="142.067" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-0-explain" class="txt">Explain</text>
+<text x="30" y="96.463" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-0" data-stage="0" class="txt">Set up the machines</text>
+<text x="65.792" y="96.463" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-0" data-stage="0" class="txt">1 week</text>
+<text x="30" y="102.73" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-0-learn" data-stage="0" data-field="learn" data-line="0" data-w="58" class="txt">Python 3.12 environments, CUDA wheels</text>
+<text x="30" y="105.92" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-0-learn" data-stage="0" data-field="learn" data-line="1" data-w="58" class="txt">on ARM, why versions must match.</text>
+<text x="30" y="111.767" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-0-do" data-stage="0" data-field="do" data-line="0" data-w="58" class="txt">Install LeRobot v0.6.0 on the Spark and both</text>
+<text x="30" y="114.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-0-do" data-stage="0" data-field="do" data-line="1" data-w="58" class="txt">Orins. Keep ROS 2 outside the environment.</text>
+<text x="30" y="123.993" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-0-on" data-stage="0" data-field="on" data-line="0" data-w="58" class="txt">Spark · Robot Orin · Station Orin</text>
+<text x="30" y="129.84" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-0-pass" data-stage="0" data-field="pass" data-line="0" data-w="58" class="txt">A real CUDA computation runs on all</text>
+<text x="30" y="133.03" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-0-pass" data-stage="0" data-field="pass" data-line="1" data-w="58" class="txt">three, with the same LeRobot version.</text>
+<text x="30" y="142.067" font-size="2.45" fill="#566070" font-weight="400" data-block="s-0-explain" data-stage="0" data-field="explain" data-line="0" data-w="58" class="txt">Why can a generic torch wheel fail on Orin?</text>
+<text x="93" y="96.463" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-1" data-stage="1" class="txt">Read the framework</text>
+<text x="128.957" y="96.463" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-1" data-stage="1" class="txt">1 week</text>
+<text x="93" y="102.73" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-1-learn" data-stage="1" data-field="learn" data-line="0" data-w="58" class="txt">Dataset format, ACT, action</text>
+<text x="93" y="105.92" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-1-learn" data-stage="1" data-field="learn" data-line="1" data-w="58" class="txt">chunks, normalization statistics.</text>
+<text x="93" y="111.767" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-1-do" data-stage="1" data-field="do" data-line="0" data-w="58" class="txt">Load a public dataset in Python, train ACT on it, and</text>
+<text x="93" y="114.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-1-do" data-stage="1" data-field="do" data-line="1" data-w="58" class="txt">trace one frame from dataset to predicted action.</text>
+<text x="93" y="123.993" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-1-on" data-stage="1" data-field="on" data-line="0" data-w="58" class="txt">Spark</text>
+<text x="93" y="129.84" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-1-pass" data-stage="1" data-field="pass" data-line="0" data-w="58" class="txt">Plot predicted against recorded actions</text>
+<text x="93" y="133.03" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-1-pass" data-stage="1" data-field="pass" data-line="1" data-w="58" class="txt">on an episode kept out of training.</text>
+<text x="93" y="142.067" font-size="2.45" fill="#566070" font-weight="400" data-block="s-1-explain" data-stage="1" data-field="explain" data-line="0" data-w="58" class="txt">Why is low training loss not</text>
+<text x="93" y="145.257" font-size="2.45" fill="#566070" font-weight="400" data-block="s-1-explain" data-stage="1" data-field="explain" data-line="1" data-w="58" class="txt">the same as task success?</text>
+<text x="156" y="96.463" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-2" data-stage="2" class="txt">Write the robot driver</text>
+<text x="194.315" y="96.463" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-2" data-stage="2" class="txt">3 weeks</text>
+<text x="156" y="102.73" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-2-learn" data-stage="2" data-field="learn" data-line="0" data-w="58" class="txt">Robot class, motor bus, calibration,</text>
+<text x="156" y="105.92" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-2-learn" data-stage="2" data-field="learn" data-line="1" data-w="58" class="txt">plugin packaging, two-wheel kinematics.</text>
+<text x="156" y="111.767" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-2-do" data-stage="2" data-field="do" data-line="0" data-w="58" class="txt"><tspan>Write </tspan><tspan font-family="Menlo,Consolas,monospace">lerobot_robot_mobile_arm</tspan><tspan>: 6+1</tspan></text>
+<text x="156" y="114.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-2-do" data-stage="2" data-field="do" data-line="1" data-w="58" class="txt"><tspan>joints, </tspan><tspan font-family="Menlo,Consolas,monospace">x.vel</tspan><tspan>, </tspan><tspan font-family="Menlo,Consolas,monospace">theta.vel</tspan><tspan>, both cameras,</tspan></text>
+<text x="156" y="118.147" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-2-do" data-stage="2" data-field="do" data-line="2" data-w="58" class="txt">calibration, joint limits, hardware e-stop, watchdog.</text>
+<text x="156" y="123.993" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-2-on" data-stage="2" data-field="on" data-line="0" data-w="58" class="txt">Robot Orin</text>
+<text x="156" y="129.84" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-2-pass" data-stage="2" data-field="pass" data-line="0" data-w="58" class="txt">Joints stay within limits. E-stop and watchdog stop</text>
+<text x="156" y="133.03" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-2-pass" data-stage="2" data-field="pass" data-line="1" data-w="58" class="txt">it 5 of 5. Ten 1 m squares each close within 10 cm.</text>
+<text x="156" y="142.067" font-size="2.45" fill="#566070" font-weight="400" data-block="s-2-explain" data-stage="2" data-field="explain" data-line="0" data-w="58" class="txt"><tspan>Why is there no </tspan><tspan font-family="Menlo,Consolas,monospace">y.vel</tspan><tspan> in your action?</tspan></text>
+<text x="219" y="96.463" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-3" data-stage="3" class="txt">Add the lidar</text>
+<text x="243.002" y="96.463" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-3" data-stage="3" class="txt">1 week</text>
+<text x="219" y="102.73" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-3-learn" data-stage="3" data-field="learn" data-line="0" data-w="58" class="txt">Scan timing, masking the robot's</text>
+<text x="219" y="105.92" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-3-learn" data-stage="3" data-field="learn" data-line="1" data-w="58" class="txt">body, reducing a scan to 16 sectors.</text>
+<text x="219" y="111.767" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-3-do" data-stage="3" data-field="do" data-line="0" data-w="58" class="txt"><tspan>Add </tspan><tspan font-family="Menlo,Consolas,monospace">lidar.s00</tspan><tspan> to </tspan><tspan font-family="Menlo,Consolas,monospace">lidar.s15</tspan><tspan> to the</tspan></text>
+<text x="219" y="114.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-3-do" data-stage="3" data-field="do" data-line="1" data-w="58" class="txt"><tspan>observation. Slow and stop </tspan><tspan font-family="Menlo,Consolas,monospace">x.vel</tspan><tspan> inside</tspan></text>
+<text x="219" y="118.147" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-3-do" data-stage="3" data-field="do" data-line="2" data-w="58" class="txt"><tspan font-family="Menlo,Consolas,monospace">send_action</tspan><tspan>, whatever a policy asks.</tspan></text>
+<text x="219" y="123.993" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-3-on" data-stage="3" data-field="on" data-line="0" data-w="58" class="txt">Robot Orin</text>
+<text x="219" y="129.84" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-3-pass" data-stage="3" data-field="pass" data-line="0" data-w="58" class="txt">All 16 sectors log at scan rate with the</text>
+<text x="219" y="133.03" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-3-pass" data-stage="3" data-field="pass" data-line="1" data-w="58" class="txt">body masked. Driven at a wall 10 times</text>
+<text x="219" y="136.22" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-3-pass" data-stage="3" data-field="pass" data-line="2" data-w="58" class="txt">at top speed, it stops at least 15 cm away.</text>
+<text x="219" y="142.067" font-size="2.45" fill="#566070" font-weight="400" data-block="s-3-explain" data-stage="3" data-field="explain" data-line="0" data-w="58" class="txt">What can a single lidar plane never see?</text>
+<text x="282" y="96.463" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-4" data-stage="4" class="txt">Connect teleoperation</text>
+<text x="321.546" y="96.463" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-4" data-stage="4" class="txt">2 weeks</text>
+<text x="282" y="102.73" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-4-learn" data-stage="4" data-field="learn" data-line="0" data-w="58" class="txt">Teleoperator class, processors,</text>
+<text x="282" y="105.92" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-4-learn" data-stage="4" data-field="learn" data-line="1" data-w="58" class="txt">robot host and client over a network.</text>
+<text x="282" y="111.767" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-4-do" data-stage="4" data-field="do" data-line="0" data-w="58" class="txt">Combine the powered leader arm</text>
+<text x="282" y="114.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-4-do" data-stage="4" data-field="do" data-line="1" data-w="58" class="txt">and gamepad into one 9-number</text>
+<text x="282" y="118.147" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-4-do" data-stage="4" data-field="do" data-line="2" data-w="58" class="txt">action. Run the host on Robot Orin.</text>
+<text x="282" y="123.993" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-4-on" data-stage="4" data-field="on" data-line="0" data-w="58" class="txt">Robot Orin · Station Orin</text>
+<text x="282" y="129.84" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-4-pass" data-stage="4" data-field="pass" data-line="0" data-w="58" class="txt">You complete both tasks 9 of 10 times,</text>
+<text x="282" y="133.03" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-4-pass" data-stage="4" data-field="pass" data-line="1" data-w="58" class="txt">watching only the camera feeds.</text>
+<text x="282" y="142.067" font-size="2.45" fill="#566070" font-weight="400" data-block="s-4-explain" data-stage="4" data-field="explain" data-line="0" data-w="58" class="txt">If you cannot do it from the sensors</text>
+<text x="282" y="145.257" font-size="2.45" fill="#566070" font-weight="400" data-block="s-4-explain" data-stage="4" data-field="explain" data-line="1" data-w="58" class="txt">alone, why can the policy not?</text>
+<text x="345" y="96.463" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-5" data-stage="5" class="txt">Record clean data</text>
+<text x="377.04" y="96.463" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-5" data-stage="5" class="txt">1 week</text>
+<text x="345" y="102.73" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-5-learn" data-stage="5" data-field="learn" data-line="0" data-w="58" class="txt">Episodes, replay, the dataset visualizer,</text>
+<text x="345" y="105.92" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-5-learn" data-stage="5" data-field="learn" data-line="1" data-w="58" class="txt">what makes a good demonstration.</text>
+<text x="345" y="111.767" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-5-do" data-stage="5" data-field="do" data-line="0" data-w="58" class="txt">Fix camera mounts and lighting. Record</text>
+<text x="345" y="114.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-5-do" data-stage="5" data-field="do" data-line="1" data-w="58" class="txt">10 test episodes and move them to the Spark.</text>
+<text x="345" y="123.993" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-5-on" data-stage="5" data-field="on" data-line="0" data-w="58" class="txt"><tspan>Station Orin </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Spark</tspan></text>
+<text x="345" y="129.84" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-5-pass" data-stage="5" data-field="pass" data-line="0" data-w="58" class="txt">Parked-base replay repeats the task.</text>
+<text x="345" y="133.03" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-5-pass" data-stage="5" data-field="pass" data-line="1" data-w="58" class="txt">Feature and camera names are frozen.</text>
+<text x="345" y="142.067" font-size="2.45" fill="#566070" font-weight="400" data-block="s-5-explain" data-stage="5" data-field="explain" data-line="0" data-w="58" class="txt">Why does renaming a camera</text>
+<text x="345" y="145.257" font-size="2.45" fill="#566070" font-weight="400" data-block="s-5-explain" data-stage="5" data-field="explain" data-line="1" data-w="58" class="txt">break a trained policy?</text>
+<text x="12" y="172.136" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-1-learn" class="txt">Learn</text>
+<text x="12" y="181.173" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-1-do" class="txt">Do</text>
+<text x="12" y="193.399" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-1-on" class="txt">On</text>
+<text x="12" y="199.246" font-size="2.45" fill="#1B2430" font-weight="600" data-block="gutter-1-pass" class="txt">Pass</text>
+<text x="12" y="208.283" font-size="2.45" fill="#566070" font-weight="400" data-block="gutter-1-explain" class="txt">Explain</text>
+<text x="30" y="165.868" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-6" data-stage="6" class="txt">Press the button</text>
+<text x="58.998" y="165.868" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-6" data-stage="6" class="txt">2 weeks</text>
+<text x="30" y="172.136" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-6-learn" data-stage="6" data-field="learn" data-line="0" data-w="58" class="txt">Demonstration variety, ACT training, rollout,</text>
+<text x="30" y="175.326" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-6-learn" data-stage="6" data-field="learn" data-line="1" data-w="58" class="txt">reading failures from recorded episodes.</text>
+<text x="30" y="181.173" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-6-do" data-stage="6" data-field="do" data-line="0" data-w="58" class="txt">Three steps: parked base, small start</text>
+<text x="30" y="184.363" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-6-do" data-stage="6" data-field="do" data-line="1" data-w="58" class="txt">offsets, approach from 1 m. Start with</text>
+<text x="30" y="187.553" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-6-do" data-stage="6" data-field="do" data-line="2" data-w="58" class="txt">50 demos; add more where it fails.</text>
+<text x="30" y="193.399" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-6-on" data-stage="6" data-field="on" data-line="0" data-w="58" class="txt"><tspan>Station Orin </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Spark </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Robot Orin</tspan></text>
+<text x="30" y="199.246" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-6-pass" data-stage="6" data-field="pass" data-line="0" data-w="58" class="txt">From 1 m: at least</text>
+<text x="30" y="202.436" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-6-pass" data-stage="6" data-field="pass" data-line="1" data-w="58" class="txt">16 of 20 presses, with no tipping.</text>
+<text x="30" y="208.283" font-size="2.45" fill="#566070" font-weight="400" data-block="s-6-explain" data-stage="6" data-field="explain" data-line="0" data-w="58" class="txt">Which failures come from data,</text>
+<text x="30" y="211.473" font-size="2.45" fill="#566070" font-weight="400" data-block="s-6-explain" data-stage="6" data-field="explain" data-line="1" data-w="58" class="txt">and which from hardware?</text>
+<text x="93" y="165.868" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-7" data-stage="7" class="txt">Pick up the cup</text>
+<text x="120.584" y="165.868" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-7" data-stage="7" class="txt">3 weeks</text>
+<text x="93" y="172.136" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-7-learn" data-stage="7" data-field="learn" data-line="0" data-w="58" class="txt">Grasp variety, friction, ACT against</text>
+<text x="93" y="175.326" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-7-learn" data-stage="7" data-field="learn" data-line="1" data-w="58" class="txt">Diffusion Policy on the same trials.</text>
+<text x="93" y="181.173" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-7-do" data-stage="7" data-field="do" data-line="0" data-w="58" class="txt">Empty opaque cup, side grasp, same three</text>
+<text x="93" y="184.363" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-7-do" data-stage="7" data-field="do" data-line="1" data-w="58" class="txt">steps. Add harder cups only after it passes.</text>
+<text x="93" y="193.399" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-7-on" data-stage="7" data-field="on" data-line="0" data-w="58" class="txt"><tspan>Station Orin </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Spark </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Robot Orin</tspan></text>
+<text x="93" y="199.246" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-7-pass" data-stage="7" data-field="pass" data-line="0" data-w="58" class="txt">At least 14 of 20: lifted 5 cm, upright, held for 3 s.</text>
+<text x="93" y="208.283" font-size="2.45" fill="#566070" font-weight="400" data-block="s-7-explain" data-stage="7" data-field="explain" data-line="0" data-w="58" class="txt">Why compare policies on identical trials?</text>
+<text x="156" y="165.868" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-8" data-stage="8" class="txt">Teach by correcting</text>
+<text x="190.607" y="165.868" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-8" data-stage="8" class="txt">2 weeks</text>
+<text x="156" y="172.136" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-8-learn" data-stage="8" data-field="learn" data-line="0" data-w="58" class="txt">DAgger, compounding errors,</text>
+<text x="156" y="175.326" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-8-learn" data-stage="8" data-field="learn" data-line="1" data-w="58" class="txt">merging datasets, fine-tuning.</text>
+<text x="156" y="181.173" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-8-do" data-stage="8" data-field="do" data-line="0" data-w="58" class="txt"><tspan>Roll out with </tspan><tspan font-family="Menlo,Consolas,monospace">--strategy.type=dagger</tspan><tspan>,</tspan></text>
+<text x="156" y="184.363" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-8-do" data-stage="8" data-field="do" data-line="1" data-w="58" class="txt">take over before failure, and</text>
+<text x="156" y="187.553" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-8-do" data-stage="8" data-field="do" data-line="2" data-w="58" class="txt">fine-tune on demos plus corrections.</text>
+<text x="156" y="193.399" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-8-on" data-stage="8" data-field="on" data-line="0" data-w="58" class="txt"><tspan>Robot Orin · Station Orin </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Spark</tspan></text>
+<text x="156" y="199.246" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-8-pass" data-stage="8" data-field="pass" data-line="0" data-w="58" class="txt">Beats the earlier policy on the same</text>
+<text x="156" y="202.436" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-8-pass" data-stage="8" data-field="pass" data-line="1" data-w="58" class="txt">20 trials, or you can explain why not.</text>
+<text x="156" y="208.283" font-size="2.45" fill="#566070" font-weight="400" data-block="s-8-explain" data-stage="8" data-field="explain" data-line="0" data-w="58" class="txt">Why do corrections teach</text>
+<text x="156" y="211.473" font-size="2.45" fill="#566070" font-weight="400" data-block="s-8-explain" data-stage="8" data-field="explain" data-line="1" data-w="58" class="txt">what demonstrations cannot?</text>
+<text x="219" y="165.868" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-9" data-stage="9" class="txt">One model, two tasks</text>
+<text x="257.416" y="165.868" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-9" data-stage="9" class="txt">2 weeks</text>
+<text x="219" y="172.136" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-9-learn" data-stage="9" data-field="learn" data-line="0" data-w="58" class="txt">SmolVLA, language prompts, async</text>
+<text x="219" y="175.326" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-9-learn" data-stage="9" data-field="learn" data-line="1" data-w="58" class="txt">inference, Real-Time Chunking.</text>
+<text x="219" y="181.173" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-9-do" data-stage="9" data-field="do" data-line="0" data-w="58" class="txt"><tspan>Fine-tune </tspan><tspan font-family="Menlo,Consolas,monospace">smolvla_base</tspan><tspan> on the</tspan></text>
+<text x="219" y="184.363" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-9-do" data-stage="9" data-field="do" data-line="1" data-w="58" class="txt">Spark with one prompt per task. Serve</text>
+<text x="219" y="187.553" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-9-do" data-stage="9" data-field="do" data-line="2" data-w="58" class="txt">it from Station Orin to the robot.</text>
+<text x="219" y="193.399" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-9-on" data-stage="9" data-field="on" data-line="0" data-w="58" class="txt"><tspan>Spark </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Station Orin </tspan><tspan font-family="Menlo,Consolas,monospace">→</tspan><tspan> Robot Orin</tspan></text>
+<text x="219" y="199.246" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-9-pass" data-stage="9" data-field="pass" data-line="0" data-w="58" class="txt">On 20 trials per task, compared with your two</text>
+<text x="219" y="202.436" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-9-pass" data-stage="9" data-field="pass" data-line="1" data-w="58" class="txt">ACT policies. Either result is fine if explained.</text>
+<text x="219" y="208.283" font-size="2.45" fill="#566070" font-weight="400" data-block="s-9-explain" data-stage="9" data-field="explain" data-line="0" data-w="58" class="txt">What does RTC fix, and what</text>
+<text x="219" y="211.473" font-size="2.45" fill="#566070" font-weight="400" data-block="s-9-explain" data-stage="9" data-field="explain" data-line="1" data-w="58" class="txt">does async inference fix?</text>
+<text x="282" y="165.868" font-size="3.6" fill="#1B2430" font-weight="600" data-block="stage-title-10" data-stage="10" class="txt">Run the mission</text>
+<text x="310.426" y="165.868" font-size="2.45" fill="#566070" font-weight="400" data-block="stage-time-10" data-stage="10" class="txt">1 week</text>
+<text x="282" y="172.136" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-10-learn" data-stage="10" data-field="learn" data-line="0" data-w="58" class="txt">Sequencing policies, success checks</text>
+<text x="282" y="175.326" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-10-learn" data-stage="10" data-field="learn" data-line="1" data-w="58" class="txt">with OpenCV, failure analysis.</text>
+<text x="282" y="181.173" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-10-do" data-stage="10" data-field="do" data-line="0" data-w="58" class="txt">Write a Python script: approach, press, confirm</text>
+<text x="282" y="184.363" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-10-do" data-stage="10" data-field="do" data-line="1" data-w="58" class="txt">the light, pick up the cup. Log every run.</text>
+<text x="282" y="193.399" font-size="2.45" fill="#1B2430" font-weight="400" data-block="s-10-on" data-stage="10" data-field="on" data-line="0" data-w="58" class="txt">Robot Orin · Station Orin</text>
+<text x="282" y="199.246" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-10-pass" data-stage="10" data-field="pass" data-line="0" data-w="58" class="txt">At least 6 of 10 full missions, failures</text>
+<text x="282" y="202.436" font-size="2.45" fill="#1B2430" font-weight="600" data-block="s-10-pass" data-stage="10" data-field="pass" data-line="1" data-w="58" class="txt">classified by cause, and a live demo.</text>
+<text x="282" y="208.283" font-size="2.45" fill="#566070" font-weight="400" data-block="s-10-explain" data-stage="10" data-field="explain" data-line="0" data-w="58" class="txt">Where would your next</text>
+<text x="282" y="211.473" font-size="2.45" fill="#566070" font-weight="400" data-block="s-10-explain" data-stage="10" data-field="explain" data-line="1" data-w="58" class="txt">50 demonstrations go, and why?</text>
+<text x="345" y="165.868" font-size="3.6" fill="#1B2430" font-weight="600" data-block="after-head" class="txt">After the mission</text>
+<text x="345" y="172.136" font-size="2.45" fill="#1B2430" font-weight="400" data-block="after-0" data-line="0" data-w="58" class="txt">Navigate a room: ROS 2 and Nav2 with the lidar.</text>
+<text x="345" y="177.983" font-size="2.45" fill="#1B2430" font-weight="400" data-block="after-1" data-line="0" data-w="58" class="txt">Learn on the robot: HIL-SERL</text>
+<text x="345" y="181.173" font-size="2.45" fill="#1B2430" font-weight="400" data-block="after-1" data-line="1" data-w="58" class="txt">for short arm-only tasks.</text>
+<text x="345" y="187.019" font-size="2.45" fill="#1B2430" font-weight="400" data-block="after-2" data-line="0" data-w="58" class="txt">Try larger models: Pi0.5 fits in Spark</text>
+<text x="345" y="190.209" font-size="2.45" fill="#1B2430" font-weight="400" data-block="after-2" data-line="1" data-w="58" class="txt">memory, but expect long runs.</text>
+<text x="345" y="196.056" font-size="2.45" fill="#1B2430" font-weight="400" data-block="after-3" data-line="0" data-w="58" class="txt">Share it: publish your dataset</text>
+<text x="345" y="199.246" font-size="2.45" fill="#1B2430" font-weight="400" data-block="after-3" data-line="1" data-w="58" class="txt">and model card on the Hub.</text>
+<text x="12" y="218.969" font-size="4.4" fill="#1B2430" font-weight="600" data-block="p1-head" class="txt">Three computers, three jobs</text>
+<text x="13.9" y="228.369" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-node-0" class="txt">Robot Orin</text>
+<text x="57.4" y="228.369" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-node-1" class="txt">Station Orin</text>
+<text x="100.9" y="228.369" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-node-2" class="txt">DGX Spark</text>
+<text x="33.75" y="223.269" font-size="2.45" fill="#566070" font-weight="400" text-anchor="middle" data-block="p1-flow0" class="txt">wired network</text>
+<text x="77.25" y="223.269" font-size="2.45" fill="#566070" font-weight="400" text-anchor="middle" data-block="p1-flow1" class="txt">datasets</text>
+<text x="77.25" y="232.369" font-size="2.45" fill="#566070" font-weight="400" text-anchor="middle" data-block="p1-flow2" class="txt">trained policies</text>
+<text x="12" y="237.902" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-0" data-line="0" data-w="41" class="txt"><tspan font-weight="600" fill="#1B2430">Robot</tspan><tspan> </tspan><tspan font-weight="600" fill="#1B2430">Orin,</tspan><tspan> </tspan><tspan fill="#566070">on</tspan><tspan> </tspan><tspan fill="#566070">the</tspan><tspan> </tspan><tspan fill="#566070">chassis:</tspan></text>
+<text x="12" y="241.092" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-0" data-line="1" data-w="41" class="txt">Motors, cameras, lidar and</text>
+<text x="12" y="244.282" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-0" data-line="2" data-w="41" class="txt">safety. Runs ACT directly.</text>
+<text x="12" y="247.472" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-0" data-line="3" data-w="41" class="txt">Budget its power on the battery.</text>
+<text x="55.5" y="237.902" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-1" data-line="0" data-w="41" class="txt"><tspan font-weight="600" fill="#1B2430">Station</tspan><tspan> </tspan><tspan font-weight="600" fill="#1B2430">Orin,</tspan><tspan> </tspan><tspan fill="#566070">on</tspan><tspan> </tspan><tspan fill="#566070">the</tspan><tspan> </tspan><tspan fill="#566070">bench:</tspan></text>
+<text x="55.5" y="241.092" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-1" data-line="1" data-w="41" class="txt">Leader arm, gamepad, monitor.</text>
+<text x="55.5" y="244.282" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-1" data-line="2" data-w="41" class="txt">Records datasets to an added</text>
+<text x="55.5" y="247.472" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-1" data-line="3" data-w="41" class="txt">NVMe drive. Serves large policies.</text>
+<text x="99" y="237.902" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-2" data-line="0" data-w="41" class="txt"><tspan font-weight="600" fill="#1B2430">DGX</tspan><tspan> </tspan><tspan font-weight="600" fill="#1B2430">Spark,</tspan><tspan> </tspan><tspan fill="#566070">in</tspan><tspan> </tspan><tspan fill="#566070">the</tspan><tspan> </tspan><tspan fill="#566070">lab:</tspan><tspan> Trains</tspan></text>
+<text x="99" y="241.092" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-2" data-line="1" data-w="41" class="txt">every policy, one job at a time,</text>
+<text x="99" y="244.282" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-2" data-line="2" data-w="41" class="txt">and keeps the master datasets.</text>
+<text x="99" y="247.472" font-size="2.45" fill="#1B2430" font-weight="400" data-block="role-2" data-line="3" data-w="41" class="txt">Never in the control loop.</text>
+<text x="12" y="252.155" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-work" data-line="0" data-w="138" class="txt">Most stages: record on Station Orin, train on the Spark, run on Robot Orin.</text>
+<text x="12" y="256.838" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-timing" data-line="0" data-w="138" class="txt">Plan overnight runs: one published SmolVLA example, 20,000 steps</text>
+<text x="12" y="260.028" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-timing" data-line="1" data-w="138" class="txt">at batch 64, took about 30 h on a Spark. Time your own first run.</text>
+<text x="12" y="264.411" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-setup0" data-line="0" data-w="138" class="txt"><tspan>Spark: </tspan><tspan font-family="Menlo,Consolas,monospace">uv</tspan><tspan> </tspan><tspan font-family="Menlo,Consolas,monospace">venv</tspan><tspan> </tspan><tspan font-family="Menlo,Consolas,monospace">--python</tspan><tspan> </tspan><tspan font-family="Menlo,Consolas,monospace">3.12</tspan><tspan>, then install from the v0.6.0 tag.</tspan></text>
+<text x="12" y="268.794" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-setup1" data-line="0" data-w="138" class="txt"><tspan>Orin: JetPack 7.2 and Python 3.12. Install the Jetson torch wheel first, then </tspan><tspan font-family="Menlo,Consolas,monospace">pip</tspan><tspan> </tspan><tspan font-family="Menlo,Consolas,monospace">install</tspan><tspan> </tspan><tspan font-family="Menlo,Consolas,monospace">lerobot==0.6.0</tspan><tspan> </tspan><tspan font-family="Menlo,Consolas,monospace">--no-deps</tspan></text>
+<text x="12" y="271.984" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-setup1" data-line="1" data-w="138" class="txt">and its dependencies by hand. This recipe was tested on Orin NX, so verify it on AGX.</text>
+<text x="12" y="276.367" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p1-setup2" data-line="0" data-w="138" class="txt">Both are ARM machines, so LeRobot decodes video with PyAV.</text>
+<text x="156" y="218.969" font-size="4.4" fill="#1B2430" font-weight="600" data-block="p2-head" class="txt">What one lidar plane sees</text>
+<text x="169.2" y="227.18" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-head" class="txt">head camera</text>
+<text x="198.6" y="238.78" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-lidar" class="txt">lidar</text>
+<text x="205.2" y="239.48" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-plane" class="txt">lidar plane</text>
+<text x="206.2" y="245.78" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-hit" class="txt">ray stops here</text>
+<text x="226.3" y="245.18" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-leg" class="txt">table leg</text>
+<text x="237.2" y="232.98" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-cup" class="txt">cup</text>
+<text x="249.972" y="234.98" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-button" class="txt">button</text>
+<text x="205.6" y="254.18" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-caster" class="txt">caster</text>
+<text x="205.942" y="231.98" font-size="2.45" fill="#1B2430" font-weight="400" data-block="lbl-wrist" class="txt">wrist camera</text>
+<text x="156" y="259.127" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p2-0" data-line="0" data-w="120" class="txt">It scans one horizontal slice at chassis height. The drawing shows</text>
+<text x="156" y="262.317" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p2-0" data-line="1" data-w="120" class="txt">the robot parked for the cup; it drives elsewhere to press the button.</text>
+<text x="156" y="265.863" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p2-1" data-line="0" data-w="120" class="txt">Sees: walls, table legs, people's legs, and the button panel when nothing blocks it.</text>
+<text x="156" y="269.41" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p2-2" data-line="0" data-w="120" class="txt">Misses: the cup, the tabletop, the arm, stairs and drop-offs.</text>
+<text x="156" y="272.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p2-3" data-line="0" data-w="120" class="txt">So cameras find the targets. The lidar keeps distance and stops the base.</text>
+<text x="156" y="276.503" font-size="2.45" fill="#1B2430" font-weight="400" data-block="p2-4" data-line="0" data-w="120" class="txt">LeRobot has no lidar class. Your driver reports 16 sector distances as floats, and they join observation.state.</text>
+<text x="282" y="218.969" font-size="4.4" fill="#1B2430" font-weight="600" data-block="p3-head" class="txt">How to master it</text>
+<text x="282" y="224.53" font-size="2.75" fill="#1B2430" font-weight="600" data-block="ladder-0" class="txt">Run it</text>
+<text x="282" y="227.98" font-size="2.45" fill="#566070" font-weight="400" data-block="ladder-def-0" data-line="0" data-w="28.5" class="txt">The command works.</text>
+<text x="314.5" y="224.53" font-size="2.75" fill="#1B2430" font-weight="600" data-block="ladder-1" class="txt">Explain it</text>
+<text x="314.5" y="227.98" font-size="2.45" fill="#566070" font-weight="400" data-block="ladder-def-1" data-line="0" data-w="28.5" class="txt">You can say what</text>
+<text x="314.5" y="231.17" font-size="2.45" fill="#566070" font-weight="400" data-block="ladder-def-1" data-line="1" data-w="28.5" class="txt">it wrote and why.</text>
+<text x="347" y="224.53" font-size="2.75" fill="#1B2430" font-weight="600" data-block="ladder-2" class="txt">Change it</text>
+<text x="347" y="227.98" font-size="2.45" fill="#566070" font-weight="400" data-block="ladder-def-2" data-line="0" data-w="28.5" class="txt">You alter one</text>
+<text x="347" y="231.17" font-size="2.45" fill="#566070" font-weight="400" data-block="ladder-def-2" data-line="1" data-w="28.5" class="txt">part on purpose.</text>
+<text x="379.5" y="224.53" font-size="2.75" fill="#1B2430" font-weight="600" data-block="ladder-3" class="txt">Debug it</text>
+<text x="379.5" y="227.98" font-size="2.45" fill="#566070" font-weight="400" data-block="ladder-def-3" data-line="0" data-w="28.5" class="txt">You fix a failure</text>
+<text x="379.5" y="231.17" font-size="2.45" fill="#566070" font-weight="400" data-block="ladder-def-3" data-line="1" data-w="28.5" class="txt">from the logs.</text>
+<text x="285.2" y="236.583" font-size="2.45" fill="#1B2430" font-weight="400" data-block="rule-0-lead" class="txt">Trace one frame by hand before you trust a command.</text>
+<text x="285.6" y="240.13" font-size="2.45" fill="#566070" font-weight="400" data-block="rule-0-reason" data-line="0" data-w="122.4" class="txt"><tspan>Follow it from </tspan><tspan font-family="Menlo,Consolas,monospace">get_observation()</tspan><tspan> to the dataset row to the policy output.</tspan></text>
+<text x="285.2" y="245.676" font-size="2.45" fill="#1B2430" font-weight="400" data-block="rule-1-lead" class="txt">Watch your dataset before you train on it.</text>
+<text x="285.6" y="249.223" font-size="2.45" fill="#566070" font-weight="400" data-block="rule-1-reason" data-line="0" data-w="122.4" class="txt">A bad episode teaches bad behavior.</text>
+<text x="285.2" y="254.77" font-size="2.45" fill="#1B2430" font-weight="400" data-block="rule-2-lead" class="txt">Change one thing per experiment, and write it down.</text>
+<text x="285.6" y="258.317" font-size="2.45" fill="#566070" font-weight="400" data-block="rule-2-reason" data-line="0" data-w="122.4" class="txt">Otherwise you cannot tell what helped.</text>
+<text x="285.2" y="263.863" font-size="2.45" fill="#1B2430" font-weight="400" data-block="rule-3-lead" class="txt">Count real successes as k of n.</text>
+<text x="285.6" y="267.41" font-size="2.45" fill="#566070" font-weight="400" data-block="rule-3-reason" data-line="0" data-w="122.4" class="txt">8 of 10 still allows a true rate of 49–94% (95% Wilson interval).</text>
+<text x="285.2" y="272.957" font-size="2.45" fill="#1B2430" font-weight="400" data-block="rule-4-lead" class="txt">When the docs and the robot disagree, read the source.</text>
+<text x="285.6" y="276.503" font-size="2.45" fill="#566070" font-weight="400" data-block="rule-4-reason" data-line="0" data-w="122.4" class="txt">LeRobot changes quickly, and the code is the final word.</text>
+<text x="12" y="282.8" font-size="2.45" fill="#566070" font-weight="400" data-block="foot-left" data-line="0" data-w="244" class="txt">Times are planning estimates at about 8 hours per week, about 19 weeks in total. Pass targets are starter values: tune them to your hardware and justify the change.</text>
+<text x="261.313" y="282.8" font-size="2.45" fill="#566070" font-weight="400" data-block="foot-right" data-line="0" data-w="236" class="txt"><tspan>Checked Nov 2026 against LeRobot v0.6 docs. Commands and flags change between releases, so pin one version and use </tspan><tspan font-family="Menlo,Consolas,monospace">--help</tspan><tspan>.</tspan></text>
+</svg>

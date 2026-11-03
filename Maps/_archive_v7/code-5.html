@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Robotics Stack Atlas v7-EN · A3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Source+Sans+3:wght@400;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: A3 landscape; margin: 0; }
+  html, body { margin: 0; padding: 0; background: #d8d2c4; }
+  svg { width: 420mm; height: 297mm; display: block; }
+  .d { font-family: 'Fraunces', Georgia, serif; }
+  .c { font-family: 'Source Sans 3', 'Segoe UI', sans-serif; }
+  .m { font-family: 'DM Mono', 'Source Sans 3', monospace; }
+  text { fill: #26241f; }
+  @media print { html, body { background: none; } }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 420 297" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="paper" cx="50%" cy="38%" r="85%">
+    <stop offset="0%" stop-color="#f7f0de"/><stop offset="100%" stop-color="#eee4cb"/>
+  </radialGradient>
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="0.5" stdDeviation="0.6" flood-color="#5c574c" flood-opacity="0.3"/>
+  </filter>
+</defs>
+
+<rect x="0" y="0" width="420" height="297" fill="url(#paper)"/>
+<rect x="0" y="0" width="420" height="297" filter="url(#grain)" opacity="0.04"/>
+
+<!-- Title block -->
+<text class="d" x="12" y="15" font-size="11.5" font-weight="900" letter-spacing="1">ROBOTICS STACK ATLAS</text>
+<text class="m" x="12.5" y="21.5" font-size="3.1" fill="#8a5a3b" letter-spacing="0.8">TWO-AXIS MECE EDITION · v7-EN · A LEARNER'S MAP OF THE ROBOT LEARNING LANDSCAPE</text>
+<text class="c" x="12.5" y="27" font-size="2.6" fill="#5c574c">Origin = top-left (Body × Infrastructure) | East = delivery exit | South = intelligence frontier | Grey dashes = main route | Colored dots = career branches | Color = ecosystem origin only (NOT a MECE axis)</text>
+<text class="c" x="12.5" y="31.6" font-size="2.35" fill="#8a5a3b" font-weight="700">LEARNING ROUTE: 0 Prep → 1 PyTorch → 2 SO-101 → 3 LeRobot → 4 ACT/DP·SmolVLA → 5 ROS 2 → 6 MoveIt 2 → 7 MuJoCo → 8 PPO/SAC → 9 Isaac Lab → 10 OpenVLA/GR00T → 10.5 Reproduce → 11 Deploy → Finish   ※ numbers = sequence, not map position (branch 12 = Harness, optional)</text>
+<line x1="12" y1="33.8" x2="408" y2="33.8" stroke="#b5442e" stroke-width="0.8"/>
+<line x1="12" y1="35.1" x2="408" y2="35.1" stroke="#b5442e" stroke-width="0.3"/>
+
+<!-- Grid -->
+<g stroke="#cbc1aa" stroke-width="0.28">
+  <line x1="65.7" y1="43" x2="65.7" y2="272.2"/><line x1="111.4" y1="43" x2="111.4" y2="272.2"/>
+  <line x1="157.1" y1="43" x2="157.1" y2="272.2"/><line x1="202.9" y1="43" x2="202.9" y2="272.2"/>
+  <line x1="248.6" y1="43" x2="248.6" y2="272.2"/><line x1="294.3" y1="43" x2="294.3" y2="272.2"/>
+  <line x1="20" y1="75.7" x2="340" y2="75.7"/><line x1="20" y1="108.5" x2="340" y2="108.5"/>
+  <line x1="20" y1="141.2" x2="340" y2="141.2"/><line x1="20" y1="174" x2="340" y2="174"/>
+  <line x1="20" y1="206.7" x2="340" y2="206.7"/><line x1="20" y1="239.5" x2="340" y2="239.5"/>
+</g>
+<rect x="20" y="43" width="320" height="229.2" fill="none" stroke="#8a7f66" stroke-width="0.7"/>
+
+<!-- Column headers -->
+<g class="c" font-size="2.9" font-weight="700" text-anchor="middle">
+  <g fill="#e8dcbc" stroke="#c2b290" stroke-width="0.3">
+    <rect x="20" y="36.4" width="45.7" height="6.1"/><rect x="65.7" y="36.4" width="45.7" height="6.1"/>
+    <rect x="111.4" y="36.4" width="45.7" height="6.1"/><rect x="157.1" y="36.4" width="45.7" height="6.1"/>
+    <rect x="202.9" y="36.4" width="45.7" height="6.1"/><rect x="248.6" y="36.4" width="45.7" height="6.1"/>
+    <rect x="294.3" y="36.4" width="45.7" height="6.1"/>
+  </g>
+  <text x="42.9" y="40.7">A Body / Hardware</text>
+  <text x="88.6" y="40.7">B Drivers · Realtime</text>
+  <text x="134.3" y="40.7">C Middleware</text>
+  <text x="180" y="40.7">D Planning · Control</text>
+  <text x="225.8" y="40.7">E Simulation · Data</text>
+  <text x="271.5" y="40.7">F Learning · Models</text>
+  <text x="317.2" y="40.7">G Deploy · Orchestrate</text>
+</g>
+
+<!-- Row headers -->
+<g class="c" font-size="2.7" font-weight="700" text-anchor="middle">
+  <g fill="#f0e5c8" stroke="#c2b290" stroke-width="0.3">
+    <rect x="11.5" y="43" width="8" height="32.7"/><rect x="11.5" y="75.7" width="8" height="32.8"/>
+    <rect x="11.5" y="108.5" width="8" height="32.7"/><rect x="11.5" y="141.2" width="8" height="32.8"/>
+    <rect x="11.5" y="174" width="8" height="32.7"/><rect x="11.5" y="206.7" width="8" height="32.8"/>
+    <rect x="11.5" y="239.5" width="8" height="32.7"/>
+  </g>
+  <text transform="rotate(-90 15.5 59.4)" x="15.5" y="59.4">R1 Engineering Base</text>
+  <text transform="rotate(-90 15.5 92.1)" x="15.5" y="92.1">R2 Model-based Control</text>
+  <text transform="rotate(-90 15.5 124.9)" x="15.5" y="124.9">R3 Trial &amp; Error · RL</text>
+  <text transform="rotate(-90 15.5 157.6)" x="15.5" y="157.6">R4 Demonstration · IL</text>
+  <text transform="rotate(-90 15.5 190.4)" x="15.5" y="190.4">R5 Foundation Models</text>
+  <text transform="rotate(-90 15.5 223.1)" x="15.5" y="223.1">R6 Frontier · World Models</text>
+  <text transform="rotate(-90 15.5 255.9)" x="15.5" y="255.9">R7 Harness · Frozen Models</text>
+</g>
+
+<!-- Open-water note -->
+<text class="c" transform="rotate(-90 88.5 128)" x="88.5" y="128" font-size="2.2" fill="#9aa294" letter-spacing="0.5">Realtime control — specialist depth</text>
+
+<!-- R7 row head: body-role note (bottom-up) -->
+<g class="c" font-size="2" fill="#8a857a">
+  <text transform="rotate(-90 27 271)" x="27" y="271">Body role in R5–R7:</text>
+  <text transform="rotate(-90 31 271)" x="31" y="271">motor ends driven directly by VLAs</text>
+  <text transform="rotate(-90 35 271)" x="35" y="271">+ execution primitives called by Harness</text>
+</g>
+
+<!-- ============ R1 ============ -->
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="25" cy="51" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="25" y="52.1">0</text>
+</g>
+<text class="c" x="30" y="52.3" font-size="2.5">★Prep: Python / NumPy / Coords</text>
+<text class="c" x="30" y="57" font-size="2.3" font-weight="700" fill="#b5442e">START HERE — follow the numbers</text>
+<g filter="url(#soft)"><circle cx="25" cy="62" r="2.4" fill="#8a5a3b"/></g>
+<text class="c" x="30" y="63.5" font-size="2.5">◇Edge compute Jetson/RK/Ascend</text>
+<g filter="url(#soft)"><circle cx="25" cy="72" r="2.4" fill="#8a5a3b"/></g>
+<text class="c" x="30" y="73.5" font-size="2.5">◇Feetech / Dynamixel servos</text>
+
+<g filter="url(#soft)"><circle cx="70.7" cy="51" r="2.4" fill="#f7f0de" stroke="#7b6a93" stroke-width="0.9"/></g>
+<text class="c" x="75.7" y="52.5" font-size="2.5">◇Unitree / Franka SDK</text>
+<g filter="url(#soft)"><circle cx="70.7" cy="61" r="2.4" fill="#f7f0de" stroke="#7b6a93" stroke-width="0.9"/></g>
+<text class="c" x="75.7" y="62.5" font-size="2.5">◇EtherCAT / CAN bus</text>
+<g filter="url(#soft)"><circle cx="70.7" cy="69.5" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="75.7" y="71" font-size="2.5">◇micro-ROS · Zephyr</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="116.4" cy="51" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="116.4" y="52.1">5</text>
+</g>
+<g filter="url(#soft)"><circle cx="116.4" cy="51" r="3.1" fill="#7b6a93" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="121.4" y="52.5" font-size="2.5" font-weight="700">★ROS 2 (Humble / Jazzy)</text>
+<g filter="url(#soft)"><circle cx="116.4" cy="59.5" r="3.1" fill="#7b6a93" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="121.4" y="61" font-size="2.5" font-weight="700">★ros2_control HW interface</text>
+<g filter="url(#soft)"><circle cx="116.4" cy="67" r="3.1" fill="#5c574c" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="121.4" y="68.5" font-size="2.5" font-weight="700">★rosbag2 / MCAP</text>
+<g filter="url(#soft)"><circle cx="116.4" cy="73.5" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="121.4" y="75" font-size="2.5">◇RViz2 · Foxglove</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="252.5" cy="51.5" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="252.5" y="52.6">1</text>
+</g>
+<g filter="url(#soft)"><circle cx="252.5" cy="51.5" r="3.1" fill="#5c574c" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="53" font-size="2.5" font-weight="700">★PyTorch</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="60" r="3.1" fill="#c98a2e" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="61.5" font-size="2.5" font-weight="700">★Hugging Face Hub</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="67.5" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="69" font-size="2.5">◇OpenCV · PCL</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="73.5" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="75" font-size="2.5">◇JAX · W&amp;B / SwanLab</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="299.3" cy="52" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="299.3" y="53.1">11</text>
+</g>
+<g filter="url(#soft)"><circle cx="299.3" cy="52" r="3.1" fill="#5c574c" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="304.3" y="53.5" font-size="2.5" font-weight="700">★ONNX Runtime / TensorRT</text>
+<g filter="url(#soft)"><circle cx="299.3" cy="61" r="3.1" fill="#5c574c" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="304.3" y="62.5" font-size="2.5" font-weight="700">★Real-robot calibration</text>
+<g filter="url(#soft)"><circle cx="299.3" cy="69.5" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="304.3" y="71" font-size="2.5">◇Eval · Docker · Isaac OS</text>
+<g filter="url(#soft)">
+  <line x1="299.3" y1="44.3" x2="299.3" y2="49.8" stroke="#5c574c" stroke-width="0.55"/>
+  <path d="M299.3 44.3 l5.2 1.9 -5.2 1.9 z" fill="#b5442e"/>
+</g>
+<text class="c" x="293" y="58" font-size="2.3" font-weight="700" fill="#b5442e" text-anchor="end">FINISH: projects &amp; jobs</text>
+
+<!-- ============ R2 ============ -->
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="162.1" cy="83" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="162.1" y="84.1">6</text>
+</g>
+<g filter="url(#soft)"><circle cx="162.1" cy="83" r="3.1" fill="#7b6a93" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="167.1" y="84.5" font-size="2.5" font-weight="700">★MoveIt 2 (OSS standard)</text>
+<g filter="url(#soft)"><circle cx="162.1" cy="91.5" r="2.4" fill="#f7f0de" stroke="#7b6a93" stroke-width="0.9"/></g>
+<text class="c" x="167.1" y="93" font-size="2.5">◇Nav2</text>
+<g filter="url(#soft)"><circle cx="162.1" cy="99" r="2.4" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="167.1" y="100.5" font-size="2.5">◇Pinocchio · Drake</text>
+<g filter="url(#soft)"><circle cx="162.1" cy="105.5" r="2.4" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="167.1" y="107" font-size="2.5">◇ORB-SLAM3 · VINS-Fusion</text>
+
+<g filter="url(#soft)"><circle cx="207.9" cy="84" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<circle cx="211.4" cy="80.7" r="0.9" fill="none" stroke="#5c574c" stroke-width="0.5"/>
+<text class="c" x="212.9" y="85.5" font-size="2.5">◇Gazebo · PyBullet</text>
+<text class="c" x="212.9" y="89.1" font-size="2.1" fill="#8a857a">secondary R3</text>
+
+<g filter="url(#soft)"><circle cx="252.5" cy="84" r="2.4" fill="#f7f0de" stroke="#7b6a93" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="85.5" font-size="2.5">◇Behavior trees (BT)</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="95" r="2.4" fill="#f7f0de" stroke="#a4453a" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="96.5" font-size="2.5">◇LLM task planning</text>
+
+<!-- ============ R3 ============ -->
+<g filter="url(#soft)"><circle cx="25" cy="116" r="2.4" fill="#8a5a3b"/></g>
+<text class="c" x="30" y="117.5" font-size="2.5">◇ODrive / moteus drives</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="207.9" cy="114" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="207.9" y="115.1">7</text>
+</g>
+<g filter="url(#soft)"><circle cx="207.9" cy="114" r="3.1" fill="#3e6e9e" stroke="#f7f0de" stroke-width="0.9"/></g>
+<circle cx="211.4" cy="110.7" r="0.9" fill="none" stroke="#5c574c" stroke-width="0.5"/>
+<text class="c" x="212.9" y="115.5" font-size="2.5" font-weight="700">☆MuJoCo (MJX / Warp)</text>
+<text class="c" x="212.9" y="119.1" font-size="2.1" fill="#8a857a">secondary R2</text>
+<g filter="url(#soft)"><circle cx="207.9" cy="125" r="2.4" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="212.9" y="126.5" font-size="2.5">◇Playground · Brax</text>
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="207.9" cy="132" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="207.9" y="133.1">9</text>
+</g>
+<g filter="url(#soft)"><circle cx="207.9" cy="132" r="3.1" fill="#3f7a45" stroke="#f7f0de" stroke-width="0.9"/></g>
+<circle cx="211.4" cy="128.7" r="0.9" fill="none" stroke="#5c574c" stroke-width="0.5"/>
+<text class="c" x="212.9" y="133.5" font-size="2.5" font-weight="700">☆Isaac Lab 3.0</text>
+<text class="c" x="212.9" y="137.1" font-size="2.1" fill="#8a857a">26.10 GA · dual backend · sec R5</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="252.5" cy="115" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="252.5" y="116.1">8</text>
+</g>
+<g filter="url(#soft)"><circle cx="252.5" cy="115" r="3.1" fill="#5c574c" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="116.5" font-size="2.5" font-weight="700">☆PPO / SAC fundamentals</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="128" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="129.5" font-size="2.5">◇cleanrl · SB3 · skrl</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="137" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="138.5" font-size="2.5">◇RLlib · sample-factory</text>
+
+<!-- ============ R4 ============ -->
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="25" cy="148" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="25" y="149.1">2</text>
+</g>
+<g filter="url(#soft)"><circle cx="25" cy="148" r="3.1" fill="#c98a2e" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="30" y="149.5" font-size="2.5" font-weight="700">★SO-100 / SO-101 arm</text>
+<text class="c" x="30" y="153.1" font-size="2.1" fill="#8a857a">TheRobotStudio × HF</text>
+<g filter="url(#soft)"><circle cx="25" cy="161" r="2.4" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="30" y="162.5" font-size="2.5">◇ALOHA · GELLO · UMI</text>
+
+<g filter="url(#soft)"><rect x="205.4" y="145.5" width="5" height="5" fill="#c98a2e" stroke="#f7f0de" stroke-width="0.8"/></g>
+<text class="c" x="212.9" y="149.5" font-size="2.5" font-weight="700">★LeRobot community datasets</text>
+<g filter="url(#soft)"><rect x="205.4" y="156.5" width="5" height="5" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="212.9" y="160.5" font-size="2.5">◇MimicGen · Real2Sim</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="252.5" cy="146" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="252.5" y="147.1">3</text>
+</g>
+<g filter="url(#soft)"><circle cx="252.5" cy="146" r="3.1" fill="#c98a2e" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="147.5" font-size="2.5" font-weight="700">★LeRobot framework</text>
+<text class="c" x="258.6" y="151.1" font-size="2.1" fill="#8a857a">v0.5.x · teleop→train→deploy</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="157" r="3.1" fill="#3e6e9e" stroke="#f7f0de" stroke-width="0.9"/></g>
+<circle cx="256" cy="153.7" r="0.9" fill="none" stroke="#5c574c" stroke-width="0.5"/>
+<text class="c" x="258.6" y="158.5" font-size="2.5" font-weight="700">★ACT · Diffusion Policy</text>
+<text class="c" x="258.6" y="162.1" font-size="2.1" fill="#8a857a">DP sim/real · secondary R5</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="167" r="2.4" fill="#f7f0de" stroke="#3f7a45" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="168.5" font-size="2.5">◇Isaac Teleop</text>
+
+<g filter="url(#soft)"><circle cx="299.3" cy="148" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="304.3" y="149.5" font-size="2.5">◇Action chunking</text>
+<g filter="url(#soft)"><circle cx="299.3" cy="160" r="2.4" fill="#f7f0de" stroke="#5c574c" stroke-width="0.9"/></g>
+<text class="c" x="304.3" y="161.5" font-size="2.5">◇sync/rtc · temp. ensemble</text>
+
+<!-- ============ R5 ============ -->
+<g filter="url(#soft)"><rect x="205.4" y="178.5" width="5" height="5" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="212.9" y="182.5" font-size="2.5">◇LIBERO · CALVIN benchmarks</text>
+<g filter="url(#soft)"><rect x="205.4" y="187.5" width="5" height="5" fill="#3e6e9e"/></g>
+<text class="c" x="212.9" y="191.5" font-size="2.5">◇OXE · DROID · BridgeData</text>
+<text class="c" x="212.9" y="195.1" font-size="2.1" fill="#8a857a">RLDS / rlds_dataset_builder</text>
+<g filter="url(#soft)"><rect x="205.4" y="198.5" width="5" height="5" fill="#3f7a45"/></g>
+<text class="c" x="212.9" y="202.5" font-size="2.5">◇Human 1M</text>
+<text class="c" x="212.9" y="206.1" font-size="2.1" fill="#8a857a">NVIDIA 26.10 · on Hugging Face</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="252.5" cy="181" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="252.5" y="182.1">4</text>
+</g>
+<g filter="url(#soft)"><circle cx="252.5" cy="181" r="3.1" fill="#c98a2e" stroke="#f7f0de" stroke-width="0.9"/></g>
+<circle cx="256" cy="177.7" r="0.9" fill="none" stroke="#5c574c" stroke-width="0.5"/>
+<text class="c" x="258.6" y="182.5" font-size="2.5" font-weight="700">★SmolVLA (+SmolVLM2)</text>
+<text class="c" x="258.6" y="186.1" font-size="2.1" fill="#8a857a">HF 25.06 · HF×academia lineage</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="192" r="3.1" fill="#3f7a45" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="193.5" font-size="2.5" font-weight="700">★GR00T N1.7</text>
+<text class="c" x="258.6" y="197.1" font-size="2.1" fill="#8a857a">26.04 · 3B · Action Cascade</text>
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="252.5" cy="202" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="252.5" y="203.1">10</text>
+</g>
+<g filter="url(#soft)"><circle cx="252.5" cy="202" r="3.1" fill="#3e6e9e" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="203.5" font-size="2.5" font-weight="700">★OpenVLA · CogACT · Octo</text>
+
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="299.3" cy="186" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="299.3" y="187.1">10.5</text>
+</g>
+<text class="c" x="304.3" y="187.5" font-size="2.4">☆Reproduce a paper (in sim)</text>
+
+<!-- ============ R6 ============ -->
+<g filter="url(#soft)"><path d="M162.1 212 l2.4 4.2 h-4.8 z" fill="#a4453a"/></g>
+<text class="c" x="167.1" y="215.5" font-size="2.5">▲Whole-body end-to-end</text>
+<text class="c" x="167.1" y="219.1" font-size="2.1" fill="#8a857a">research theme</text>
+
+<g filter="url(#soft)"><path d="M207.9 211 l2.4 4.2 h-4.8 z" fill="#3f7a45"/></g>
+<text class="c" x="212.9" y="214.5" font-size="2.5">▲Cosmos world models</text>
+<text class="c" x="212.9" y="218.1" font-size="2.1" fill="#8a857a">NVIDIA · since 25.01</text>
+<g filter="url(#soft)"><path d="M207.9 224 l2.4 4.2 h-4.8 z" fill="#a4453a"/></g>
+<text class="c" x="212.9" y="227.5" font-size="2.5">▲Video world models (Genie)</text>
+
+<g filter="url(#soft)"><path d="M252.5 210 l2.4 4.2 h-4.8 z" fill="#a4453a"/></g>
+<text class="c" x="258.6" y="213.5" font-size="2.5">▲π0 / π0.5 → π0.7</text>
+<text class="c" x="258.6" y="217.1" font-size="2.1" fill="#8a857a">PI · weights open thru π0.5</text>
+<g filter="url(#soft)"><path d="M252.5 221 l2.4 4.2 h-4.8 z" fill="#a4453a"/></g>
+<text class="c" x="258.6" y="224.5" font-size="2.5">▲Gemini Robotics 2</text>
+<text class="c" x="258.6" y="228.1" font-size="2.1" fill="#8a857a">Google 26.07 · full-body E2E</text>
+<text class="c" x="258.6" y="231.7" font-size="2.1" fill="#8a857a">partners only (bridge to R5)</text>
+<g filter="url(#soft)"><path d="M252.5 235 l2.4 4.2 h-4.8 z" fill="#a4453a"/></g>
+<text class="c" x="258.6" y="238.5" font-size="2.5">▲GO-1 · LingBot-VLA 2</text>
+
+<g filter="url(#soft)"><path d="M299.3 212 l2.4 4.2 h-4.8 z" fill="#a4453a"/></g>
+<text class="c" x="304.3" y="215.5" font-size="2.5">▲WAM world-action models</text>
+<text class="c" x="304.3" y="219.1" font-size="2.1" fill="#8a857a">what Harness wraps</text>
+
+<!-- ============ R7 ============ -->
+<g class="m" font-size="2.9" text-anchor="middle">
+  <circle cx="252.5" cy="247" r="3.3" fill="#f7f0de" stroke="#6e6a5f" stroke-width="0.7"/><text x="252.5" y="248.1">12</text>
+</g>
+<g filter="url(#soft)"><circle cx="252.5" cy="247" r="3.1" fill="#3f7a45" stroke="#f7f0de" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="248.5" font-size="2.5" font-weight="700">☆ASPIRE v1.0</text>
+<text class="c" x="258.6" y="252.1" font-size="2.1" fill="#8a857a">GEAR 26.10 · Apache 2.0</text>
+<text class="c" x="258.6" y="255.7" font-size="2.1" fill="#8a857a">code-as-policy + skill library</text>
+<g filter="url(#soft)"><circle cx="252.5" cy="261.5" r="2.4" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="258.6" y="263" font-size="2.5">◇Harness² (RSI recursion)</text>
+<text class="c" x="258.6" y="266.6" font-size="2.1" fill="#8a857a">Google Cloud AI · 26.10</text>
+
+<g filter="url(#soft)"><circle cx="299.3" cy="247" r="2.4" fill="#f7f0de" stroke="#3e6e9e" stroke-width="0.9"/></g>
+<text class="c" x="304.3" y="248.5" font-size="2.5">◇RoboHarness</text>
+<text class="c" x="304.3" y="252.1" font-size="2.1" fill="#8a857a">ZJU 26.07 · Memory Bridge</text>
+<g filter="url(#soft)"><path d="M299.3 258 l2.4 4.2 h-4.8 z" fill="#a4453a"/></g>
+<text class="c" x="304.3" y="261.5" font-size="2.4">▲SHAPER · Cortex</text>
+<text class="c" x="304.3" y="267.3" font-size="2.15" fill="#9aa294">Function anchor: skill orchestration</text>
+
+<!-- ============ Main route ============ -->
+<path d="M25 51
+         L 25 46.5 L 252.5 46.5 L 252.5 51.5
+         C 249 54, 246 55, 245 57
+         L 245 141.2
+         L 25 141.2 L 25 148
+         L 25 141.2 L 245 141.2
+         L 245 146 L 252.5 146
+         C 249 148, 246 149, 245 151
+         L 245 174 L 252.5 181
+         C 249 178, 246 176, 245 174
+         L 111.4 174
+         L 111.4 58 L 116.4 51.5
+         L 111.4 46.5 L 157.1 46.5 L 157.1 83 L 162.1 83
+         L 157.1 86 L 157.1 108.5 L 207.9 108.5 L 207.9 114
+         L 212 110.5 L 248 110.5 L 252.5 115
+         C 249 118, 246 122, 245 128
+         L 207.9 128 L 207.9 131
+         L 202.9 134 L 202.9 196.5 L 245 196.5
+         L 245 201 L 252.5 202
+         C 258 204, 258 205.5, 262 205.5
+         L 294.3 205.5 L 294.3 187 L 299.3 186
+         L 299.3 182.5 L 337 178.5 L 337 46.5 L 299.3 46.5 L 299.3 52"
+      fill="none" stroke="#8a857a" stroke-width="1.1" stroke-dasharray="5 2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+
+<!-- Branches -->
+<path d="M25 148 L 21.5 144 L 21.5 55 L 108 55 L 112 53 L 116.4 51.5"
+      fill="none" stroke="#7b6a93" stroke-width="0.75" stroke-dasharray="1 1.6" opacity="0.85"/>
+<path d="M116.4 51.5 L 110 57 L 106 70 L 106 94 L 152 94 L 157 90 L 161 86 L 162.1 83"
+      fill="none" stroke="#7b6a93" stroke-width="0.75" stroke-dasharray="1 1.6" opacity="0.85"/>
+<path d="M162.1 79 L 292 78 L 297 60 L 299.3 55 L 299.3 52"
+      fill="none" stroke="#7b6a93" stroke-width="0.75" stroke-dasharray="1 1.6" opacity="0.85"/>
+<path d="M252.5 181 L 250 176 L 110 176 L 110 56 L 114 53 L 116.4 51.5"
+      fill="none" stroke="#c98a2e" stroke-width="0.75" stroke-dasharray="1 1.6" opacity="0.85"/>
+<path d="M252.5 202 L 256.5 205 L 256.5 243 L 253 246.5 L 252.5 247"
+      fill="none" stroke="#3f7a45" stroke-width="0.75" stroke-dasharray="1 1.6" opacity="0.85"/>
+
+<!-- ============ Sidebar ============ -->
+<rect x="344" y="36.4" width="64" height="235.6" fill="#f1e8d2" stroke="#8a7f66" stroke-width="0.7"/>
+<text class="d" x="347" y="43.5" font-size="3.8" font-weight="900">LEGEND</text>
+<line x1="344" y1="45.5" x2="408" y2="45.5" stroke="#b5442e" stroke-width="0.5"/>
+
+<text class="c" x="347" y="51" font-size="2.3" font-weight="700">Symbols</text>
+<text class="c" x="347" y="55.2" font-size="2.05">★ = required by ≥2 career paths</text>
+<text class="c" x="347" y="58.9" font-size="2.05">☆ = required by exactly 1 path</text>
+<text class="c" x="347" y="62.6" font-size="2.05">◇ = elective / background  ▲ = research topic</text>
+<text class="c" x="347" y="66.3" font-size="2.05">● tech  ■ dataset  ○ dot = secondary cell</text>
+<text class="c" x="347" y="70" font-size="2.05">Color = ecosystem origin only, NOT a MECE axis</text>
+
+<text class="c" x="347" y="76" font-size="2.3" font-weight="700">Color = ecosystem origin</text>
+<circle cx="349.5" cy="80.4" r="1.8" fill="#3f7a45"/><text class="c" x="353.5" y="81.2" font-size="2.05">NVIDIA (Isaac / ASPIRE / Cosmos)</text>
+<circle cx="349.5" cy="84.2" r="1.8" fill="#c98a2e"/><text class="c" x="353.5" y="85" font-size="2.05">HF community (LeRobot / SmolVLA)</text>
+<circle cx="349.5" cy="88" r="1.8" fill="#3e6e9e"/><text class="c" x="353.5" y="88.8" font-size="2.05">Academia (MuJoCo / OpenVLA)</text>
+<circle cx="349.5" cy="91.8" r="1.8" fill="#7b6a93"/><text class="c" x="353.5" y="92.6" font-size="2.05">Industry &amp; standards (ROS / MoveIt)</text>
+<circle cx="349.5" cy="95.6" r="1.8" fill="#a4453a"/><text class="c" x="353.5" y="96.4" font-size="2.05">Frontier / closed reference (π0, Gemini)</text>
+<circle cx="349.5" cy="99.4" r="1.8" fill="#5c574c"/><text class="c" x="353.5" y="100.2" font-size="2.05">General tooling (PyTorch / TensorRT)</text>
+<circle cx="349.5" cy="103.2" r="1.8" fill="#8a5a3b"/><text class="c" x="353.5" y="104" font-size="2.05">Hardware platforms (Jetson / servos)</text>
+
+<text class="c" x="347" y="110.5" font-size="2.3" font-weight="700">Vertical axis (source of capability)</text>
+<text class="c" x="347" y="114.7" font-size="2">R1 base · R2 model-based · R3 RL · R4 IL</text>
+<text class="c" x="347" y="118.2" font-size="2">R5 foundation models · R6 frontier</text>
+<text class="c" x="347" y="121.7" font-size="2">R7 Harness (emerging since 26.07)</text>
+<text class="c" x="347" y="126" font-size="2" fill="#5c574c">Boundary note: R7 improves the model's</text>
+<text class="c" x="347" y="129.5" font-size="2" fill="#5c574c">surroundings (prompt/memory/skill/tool),</text>
+<text class="c" x="347" y="133" font-size="2" fill="#5c574c">NOT its weights. R5–R6 improve the model</text>
+<text class="c" x="347" y="136.5" font-size="2" fill="#5c574c">itself. Complementary, not layered.</text>
+
+<text class="c" x="347" y="143" font-size="2.3" font-weight="700">Learning route (see title strip)</text>
+<text class="c" x="347" y="147.2" font-size="2">Main: 0→1→2→3→4→5→6→7→8→9→10→10.5→11</text>
+<circle cx="349.5" cy="151.8" r="1.6" fill="#7b6a93"/>
+<text class="c" x="353.5" y="152.6" font-size="2">Systems branch (purple): 2→5→6→11</text>
+<circle cx="349.5" cy="155.8" r="1.6" fill="#c98a2e"/>
+<text class="c" x="353.5" y="156.6" font-size="2">Applied (amber): 4→5, shares purple after</text>
+<circle cx="349.5" cy="159.8" r="1.6" fill="#3f7a45"/>
+<text class="c" x="353.5" y="160.6" font-size="2">Harness branch (green): 10→12</text>
+<text class="c" x="347" y="165" font-size="2">Route assumption: every path starts on real</text>
+<text class="c" x="347" y="168.5" font-size="2">hardware (2) — skip it and "sim 95%" bites.</text>
+
+<text class="c" x="347" y="175" font-size="2.3" font-weight="700">Career paths × required chain</text>
+<text class="c" x="347" y="179.2" font-size="2"><tspan font-weight="700" fill="#3e6e9e">RL engineer:</tspan> 7☆→8☆→9☆→11★</text>
+<text class="c" x="347" y="182.7" font-size="2"><tspan font-weight="700" fill="#a4453a">VLA / research:</tspan> 3★→4★→10★＋10.5☆</text>
+<text class="c" x="347" y="186.2" font-size="2"><tspan font-weight="700" fill="#7b6a93">Robot systems:</tspan> 2★→5★→6★→11★</text>
+<text class="c" x="347" y="189.7" font-size="2"><tspan font-weight="700" fill="#c98a2e">Applied deployment:</tspan> 2★→3★→4★→5★→6★→11★</text>
+<text class="c" x="347" y="193.2" font-size="2"><tspan font-weight="700" fill="#3f7a45">Agentic orchestration:</tspan> 10★→12☆</text>
+<text class="c" x="347" y="198" font-size="2">Ticket out: 2 real-robot projects + 1 repro</text>
+<text class="c" x="347" y="201.5" font-size="2">/ contest / OSS contribution (= node 10.5)</text>
+
+<rect x="346" y="205" width="60" height="12.5" fill="none" stroke="#b5442e" stroke-width="0.5"/>
+<text class="d" x="348.5" y="210.5" font-size="2.9" font-weight="700" fill="#b5442e">"95% works in sim; the real</text>
+<text class="d" x="348.5" y="215" font-size="2.9" font-weight="700" fill="#b5442e">robot is where it breaks."</text>
+
+<text class="c" x="347" y="223" font-size="2.1" font-weight="700">Fact notes (verified 2026.11)</text>
+<text class="c" x="347" y="226.6" font-size="1.95" fill="#5c574c">GR00T N1.7: EA Apr 2026; LeRobot integration Jul 2026</text>
+<text class="c" x="347" y="230" font-size="1.95" fill="#5c574c">π weights open through π0.5 (π0.7, 26.04: no open weights)</text>
+<text class="c" x="347" y="233.4" font-size="1.95" fill="#5c574c">Gemini Robotics 2 (26.07): full-body E2E, partners only</text>
+<text class="c" x="347" y="236.8" font-size="1.95" fill="#5c574c">Isaac Lab 3.0 (GA 26.10): Newton / PhysX dual backends</text>
+<text class="c" x="347" y="240.2" font-size="1.95" fill="#5c574c">Human 1M: NVIDIA release, on HF; full set for Cosmos</text>
+<text class="c" x="347" y="243.6" font-size="1.95" fill="#5c574c">Coalition partners</text>
+<text class="c" x="347" y="247" font-size="1.95" fill="#5c574c">MoveIt Pro 9.0 (26.03) dropped its OSS MoveIt 2 dep.;</text>
+<text class="c" x="347" y="250.4" font-size="1.95" fill="#5c574c">MoveIt 2 here = open-source side (2.15.x, active)</text>
+<text class="c" x="347" y="253.8" font-size="1.95" fill="#5c574c">SmolVLA/ACT/DP/HF Hub = HF×academia dual lineage</text>
+<text class="c" x="347" y="257.2" font-size="1.95" fill="#5c574c">ASPIRE keeps ☆ per the ★ criterion (1 path only)</text>
+
+<line x1="347" y1="260.5" x2="405" y2="260.5" stroke="#c2b290" stroke-width="0.5"/>
+<text class="m" x="347" y="264.2" font-size="2" fill="#8a857a">v7-EN · A3 420×297mm · SVG</text>
+<text class="m" x="347" y="267.4" font-size="2" fill="#8a857a">Content verified 2026.11 · compiled by MiMo</text>
+<text class="m" x="347" y="270.6" font-size="2" fill="#8a857a">Google Fonts — load online before printing</text>
+
+</svg>
+</body>
+</html>
